@@ -1,0 +1,15 @@
+version = 1
+
+test_patterns = [
+  'test/**/*.py',
+  'test/*.py'
+]
+
+exclude_patterns = [
+  'example/**'
+]
+
+[[analyzers]]
+name = 'python'
+enabled = true
+runtime_version = '2.x.x'
