@@ -1,0 +1,5 @@
+vendor,product,version
+libjpeg-turbo,libjpeg-turbo,2.0.1
+haxx,curl,7.59.0
+haxx,libcurl,7.59.0
+wontwork,no,7.7
