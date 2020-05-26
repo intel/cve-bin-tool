@@ -1,0 +1,52 @@
+# Copyright (C) 2020 CVE Binary Tool
+# For licence information, see LICENSE file.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cve-bin-tool 0.3.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-08 18:10+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: cve_bin_tool/OutputEngine.py:58
+msgid "severity"
+msgstr ""
+
+#: cve_bin_tool/OutputEngine.py:69
+msgid "Module Name"
+msgstr ""
+
+#: cve_bin_tool/OutputEngine.py:137
+msgid "Report Generated:{now}"
+msgstr ""
+
+#: cve_bin_tool/OutputEngine.py:141
+msgid "|   MODULE NAME      |  VERSION  |    CVE NUMBER      | SEVERITY  |"
+msgstr ""
+
+#: cve_bin_tool/OutputEngine.py:174
+msgid "Failed to write at '{self.filename}'. File already exists"
+msgstr ""
+
+#: cve_bin_tool/OutputEngine.py:177
+msgid "Generating a new filename with Default Naming Convention"
+msgstr ""
+
+#: cve_bin_tool/OutputEngine.py:184
+msgid "testing"
+msgstr ""
+
+#: cve_bin_tool/OutputEngine.py:188
+msgid "Switching Back to Default Naming Convention"
+msgstr ""
+
+#: cve_bin_tool/OutputEngine.py:192
+msgid "Output stored at {os.getcwd()}/{self.filename}"
+msgstr ""
+
