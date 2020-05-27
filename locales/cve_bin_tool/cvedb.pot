@@ -1,0 +1,60 @@
+# Copyright (C) 2020 CVE Binary Tool
+# For licence information, see LICENSE file.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cve-bin-tool 0.3.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-08 18:10+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: cve_bin_tool/cvedb.py:112
+msgid "SHA mismatch for {filename} (have: {gotsha}, want: {sha})"
+msgstr ""
+
+#: cve_bin_tool/cvedb.py:114
+msgid "Correct SHA for {filename}"
+msgstr ""
+
+#: cve_bin_tool/cvedb.py:116
+msgid "Updating CVE cache for {filename}"
+msgstr ""
+
+#: cve_bin_tool/cvedb.py:246
+msgid "Using cached CVE data (<24h old). Use -u now to update immediately."
+msgstr ""
+
+#: cve_bin_tool/cvedb.py:250
+msgid "Updating CVE data. This will take a few minutes."
+msgstr ""
+
+#: cve_bin_tool/cvedb.py:563
+msgid "Year {year} has {len(cves_for_year[\"CVE_Items\"])} CVEs in dataset"
+msgstr ""
+
+#: cve_bin_tool/cvedb.py:582
+msgid "Not verifying CVE DB cache"
+msgstr ""
+
+#: cve_bin_tool/cvedb.py:585
+msgid "Years present: {self.years()}"
+msgstr ""
+
+#: cve_bin_tool/cvedb.py:593
+msgid "Deleting cachedir {self.cachedir}"
+msgstr ""
+
+#: cve_bin_tool/cvedb.py:603
+msgid "Experimenting..."
+msgstr ""
+
+#: cve_bin_tool/cvedb.py:611
+msgid "Getting cves for {curl 7.34.0}"
+msgstr ""
+

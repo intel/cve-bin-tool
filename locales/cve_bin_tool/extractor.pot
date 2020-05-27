@@ -1,0 +1,52 @@
+# Copyright (C) 2020 CVE Binary Tool
+# For licence information, see LICENSE file.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cve-bin-tool 0.3.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-08 18:10+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: cve_bin_tool/extractor.py:20
+msgid " Extraction fail "
+msgstr ""
+
+#: cve_bin_tool/extractor.py:26
+msgid " Unknown archive type"
+msgstr ""
+
+#: cve_bin_tool/extractor.py:82
+msgid "'rpm2cpio' and 'cpio' are required to extract rpm files"
+msgstr ""
+
+#: cve_bin_tool/extractor.py:91
+msgid "7z is required to extract rpm files"
+msgstr ""
+
+#: cve_bin_tool/extractor.py:99
+msgid "'ar' is required to extract deb files"
+msgstr ""
+
+#: cve_bin_tool/extractor.py:119
+msgid "'cabextract' is required to extract cab files"
+msgstr ""
+
+#: cve_bin_tool/extractor.py:152
+msgid "{os.path.basename(filename)}.extracted"
+msgstr ""
+
+#: cve_bin_tool/extractor.py:161
+msgid "Failure extracting {filename}"
+msgstr ""
+
+#: cve_bin_tool/extractor.py:163
+msgid "Extracted {filename} to {extracted_path}"
+msgstr ""
+
