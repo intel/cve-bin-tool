@@ -1,0 +1,50 @@
+# Copyright (C) 2020 CVE Binary Tool
+# For licence information, see LICENSE file.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: cve-bin-tool 0.3.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-08 18:10+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.8.0\n"
+
+#: cve_bin_tool/csv2cve.py:27
+msgid ""
+"This tool takes a list of software + versions from a CSV file and outputs"
+" a list of CVEs known to affect those versions"
+msgstr ""
+
+#: cve_bin_tool/csv2cve.py:32
+msgid ""
+"CSV file with product data. Must contain vendor,product,version, where "
+"vendor and product match entries in the National Vulnerability Database."
+msgstr ""
+
+#: cve_bin_tool/csv2cve.py:46
+msgid "opening file: {filename}"
+msgstr ""
+
+#: cve_bin_tool/csv2cve.py:53
+msgid "Error: invalid CSV"
+msgstr ""
+
+#: cve_bin_tool/csv2cve.py:60
+msgid "Error: no {missing_columns} columns found"
+msgstr ""
+
+#: cve_bin_tool/csv2cve.py:70
+msgid ""
+"CVES for {row[\"vendor\"]} {row[\"product\"]}, {version} "
+"{row[\"version\"]}"
+msgstr ""
+
+#: cve_bin_tool/csv2cve.py:83
+msgid "No CVEs found. Is the vendor/product info correct?"
+msgstr ""
+
