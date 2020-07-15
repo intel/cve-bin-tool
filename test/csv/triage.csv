@@ -1,0 +1,5 @@
+vendor,product,version,remarks
+mit,kerberos,1.15.1,1
+haxx,curl,7.34.0,4
+mit,kerberos,5-1.15.1,5
+mit,kerberos_5,1.15.1,
