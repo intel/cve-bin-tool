@@ -1,0 +1,66 @@
+name: CVE scanner
+on:
+#    You can customize this according to your need.
+  - push
+  - pull_request
+jobs:
+  build_and_scan:
+    runs-on: ubuntu-latest
+    steps:
+    # Get date utility for caching database.
+      - name: Get Date
+        id: get-date
+        run: |
+          echo "::set-output name=date::$(/bin/date -u "+%Y%m%d")"
+        shell: bash
+    #  Let's first download dependencies for this action.
+      - uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+    #  This second step is unnecessary but highly recommended because
+    #  It will cache database and saves time redownloading it if database isn't stale.
+      - name: get cached python packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+      - name: get cached database
+        uses: actions/cache@v2
+        with:
+          path: ~/.cache/cve-bin-tool
+          key: ${{ runner.os }}-cve-bin-tool-${{ steps.get-date.outputs.date }}
+      - name: Install CVE Binary Tool
+#          We are using latest development version of CVE Binary Tool
+#          because current PyPI version don't have features like config file support,
+#          generating HTML report etc.
+        run: pip install git+https://github.com/intel/cve-bin-tool@master
+#          In case you prefer current PyPI version, you need to hard code CLI options
+#          for cve-bin-tool in the action itself and have to use CSV or JSON as output format.
+#          pip install cve-bin-tool
+      - name: build package
+#          Here, we are building Python wheel for this example.
+#          You need to replace this with your build process.
+        run: |
+          pip install wheel
+          python setup.py bdist_wheel
+      - name: Scan built package
+#          Here, we are scanning built wheel which is situated in /dist directory
+#          Python stores built packages in /dist directory.
+#          You need to replace it with the directory where you have stored built package
+        run: cve-bin-tool dist -f html -o cve-bin-tool-report.html -x
+#          Alternatively if you have written config file for cve-bin-tool you can use following command
+#          cve-bin-tool -C path/to/cve_bin_tool_config.toml
+        continue-on-error: true
+#          You need to set continue_on_error: true because CVE Binary Tool sets number of cves
+#          as exit code. And GitHub terminates action when process produces
+#          nonzero exit code status.
+      - name: Upload report as an artifact
+#        This will upload generated report as an GitHub artifact which you can download later.
+        uses: actions/upload-artifact@v2
+        with:
+          name: cve_report
+          path: 'cve-bin-tool-report.html'
