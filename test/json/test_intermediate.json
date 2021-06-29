@@ -1,0 +1,48 @@
+{
+    "metadata": {
+        "timestamp": "2021-06-18.20-47-14",
+        "tag": "backend",
+        "scanned_dir": "/home/",
+        "products_with_cve": 7,
+        "products_without_cve": 0,
+        "total_files": 7
+    },
+    "report": [{
+            "vendor": "libjpeg-turbo",
+            "product": "libjpeg-turbo",
+            "version": "2.0.1",
+            "cve_number": "CVE-2018-19664",
+            "severity": "CRITICAL",
+            "score": "6.5",
+            "cvss_version": "3",
+            "paths": "",
+            "remarks": "Confirmed",
+            "comments": "High priority need to resolve fast"
+        },
+        {
+            "vendor": "libjpeg-turbo",
+            "product": "libjpeg-turbo",
+            "version": "2.0.1",
+            "cve_number": "CVE-2018-20330",
+            "severity": "HIGH",
+            "score": "8.8",
+            "cvss_version": "3",
+            "paths": "",
+            "remarks": "Unexplored",
+            "comments": "Need to mitigate cves of this product"
+        },
+        {
+            "vendor": "libjpeg-turbo",
+            "product": "libjpeg-turbo",
+            "version": "2.0.1",
+            "cve_number": "CVE-2020-17541",
+            "severity": "HIGH",
+            "score": "8.8",
+            "cvss_version": "3",
+            "paths": "",
+            "remarks": "Unexplored",
+            "comments": "Need to mitigate cves of this product"
+        }
+    ]
+
+}
