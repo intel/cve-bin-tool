@@ -1,0 +1,5 @@
+acpid
+bash
+binutils
+wget
+br0s
