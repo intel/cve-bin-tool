@@ -1,0 +1,57 @@
+<!-- Main Information Intermediate Reports  -->
+<div class="row m-b-20">
+
+
+    <div class="col-12 col-md-12 m-t-20">
+        <!-- Graph to show Timeline Information about Intermediate Reports -->
+        <div class="card text-color-main shadow-lg  bg-white rounded">
+            <div class="card-header bg-header-dash">
+                <h6>Intermediate Product CVEs Timeline</h6>
+            </div>
+            <div class="card-body">
+                {{ intermediate_timeline }}
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-md-12 m-t-20">
+        <!-- Graph to show Severiyt count traces of intermediate reports -->
+        <div class="card text-color-main shadow-lg  bg-white rounded">
+            <div class="card-header bg-header-dash">
+                <h6>Severity Levels Timeline</h6>
+            </div>
+            <div class="card-body">
+                {{ severity_trace }}
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Left Col -->
+    <div class="col-12 col-md-6 m-t-20">
+        <!-- Graph to show total file count of intermediate file -->
+        <div class="card text-color-main shadow-lg  bg-white rounded">
+            <div class="card-header bg-header-dash">
+                <h6>Total Files</h6>
+            </div>
+            <div class="card-body">
+                {{ total_files_trace }}
+            </div>
+        </div>
+    </div>
+
+    <!-- Right Col -->
+    <div class="col-12 col-md-6 m-t-20">
+        <!-- Graph to show total product count of intermediate file -->
+        <div class="card text-color-main shadow-lg  bg-white rounded">
+            <div class="card-header bg-header-dash">
+                <h6>Number of Products</h6>
+            </div>
+            <div class="card-body">
+                {{ products_trace }}
+            </div>
+        </div>
+    </div>
+
+
+</div>
