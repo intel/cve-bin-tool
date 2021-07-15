@@ -1,0 +1,57 @@
+<style>
+    table,
+    tr,
+    td,
+    div {
+        page-break-inside: avoid !important;
+    }
+
+    .datetime {
+        white-space: nowrap;
+    }
+</style>
+<section id="intermediate-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-3">
+                <span class="h3 text-primary">Intermediate Reports </span>
+                <hr class="bg-danger">
+            </div>
+            <div class="col-12 mt-2">
+                <table class="table table-bordered text-center">
+                    <tr class="table-secondary">
+                        <th rowspan="2">Timestamp</th>
+                        <th rowspan="2">Tag</th>
+                        <th rowspan="2">Total Files</th>
+                        <th rowspan="2">Products With CVE</th>
+                        <th rowspan="2">Products Without CVE</th>
+                        <th rowspan="1" colspan='5'>Severity</th>
+                    </tr>
+                    <tr class="table-secondary">
+                        <th>UNKNOWN</th>
+                        <th>LOW</th>
+                        <th>MEDIUM</th>
+                        <th>HIGH</th>
+                        <th>CRITICAL</th>
+                    </tr>
+
+                    {% for inter_file in intermediate_data %}
+                    <tr>
+                        <td class='datetime'>{{ inter_file.metadata.timestamp }}</td>
+                        <td>{{ inter_file.metadata.tag }}</td>
+                        <td>{{ inter_file.metadata.total_files }}</td>
+                        <td>{{ inter_file.metadata.products_with_cve }}</td>
+                        <td>{{ inter_file.metadata.products_without_cve }}</td>
+                        <td>{{ inter_file.metadata.severity.UNKNOWN }}</td>
+                        <td>{{ inter_file.metadata.severity.LOW }}</td>
+                        <td>{{ inter_file.metadata.severity.MEDIUM }}</td>
+                        <td>{{ inter_file.metadata.severity.HIGH }}</td>
+                        <td>{{ inter_file.metadata.severity.CRITICAL }}</td>
+                    </tr>
+                    {% endfor %}
+
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
