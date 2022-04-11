@@ -1,0 +1,42 @@
+# Copyright (C) 2022 Anthony Harrison
+# SPDX-License-Identifier: GPL-3.0-or-later
+
+import os
+
+import xmlschema
+
+from cve_bin_tool.log import LOGGER
+
+SCHEMA_LOCATION_DEFAULT = "./cve_bin_tool/schemas/"
+
+
+def _validate_xml(filename, xsd_file):
+
+    theschema = xmlschema.XMLSchema(os.path.join(SCHEMA_LOCATION_DEFAULT, xsd_file))
+    LOGGER.debug(f"Validate {filename} against {theschema}")
+    try:
+        result = theschema.validate(filename)
+    except Exception as e:
+        LOGGER.info(f"Failed to validate {filename} against {xsd_file}. Exception {e}")
+        result = "Fail"
+    return result is None
+
+
+def validate_spdx(filename):
+    SPDX_SCHEMA = "spdx.xsd"
+    return _validate_xml(filename, SPDX_SCHEMA)
+
+
+def validate_cyclonedx(filename):
+    CYCLONEDX_SCHEMA = "cyclonedx_gen.xsd"
+    return _validate_xml(filename, CYCLONEDX_SCHEMA)
+
+
+def validate_swid(filename):
+    SWID_SCHEMA = "swid_gen.xsd"
+    return _validate_xml(filename, SWID_SCHEMA)
+
+
+def validate_pom(filename):
+    POM_SCHEMA = "pom.xsd"
+    return _validate_xml(filename, POM_SCHEMA)
