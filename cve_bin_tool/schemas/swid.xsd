@@ -1,0 +1,1338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema
+  xmlns="http://standards.iso.org/iso/19770/-2/2015/schema.xsd"
+  xmlns:swid="http://standards.iso.org/iso/19770/-2/2015/schema.xsd"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+  xmlns:xml="http://www.w3.org/XML/1998/namespace"
+
+  targetNamespace="http://standards.iso.org/iso/19770/-2/2015/schema.xsd"
+  elementFormDefault="qualified">
+
+  <xs:import
+    namespace="http://www.w3.org/2000/09/xmldsig#"
+    schemaLocation="http://www.w3.org/TR/xmldsig-core/xmldsig-core-schema.xsd"/>
+  <xs:import
+    namespace="http://www.w3.org/XML/1998/namespace"
+    schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+  <xs:annotation>
+    <xs:documentation>
+      Schema for ISO-IEC 19770-2 Software Identification Tags
+      http://standards.iso.org/iso/19770/-2/2015/schema.xsd
+
+      Copyright 2015 ISO/IEC, all rights reserved
+
+      Copyright notice: ISO and IEC grant the users of this Standard the right
+      to use this XSD file free of charge for the purpose of implementing the
+      present Standard.
+
+      Disclaimer: In no event shall ISO and/or IEC be liable for any damages
+      whatsoever (including, but not limited to, damages for loss of profits,
+      business interruption, loss of information, or any other pecuniary
+      loss) arising out of or related to the use of or inability to use the
+      XSD file. ISO and IEC disclaim all warranties, express or implied,
+      including but not limited to warranties of merchantability and fitness
+      for a particular purpose.
+    </xs:documentation>
+    <xs:appinfo>
+      <version>2.0</version>
+    </xs:appinfo>
+  </xs:annotation>
+
+  <xs:element name="SoftwareIdentity" type="SoftwareIdentity">
+    <xs:annotation>
+      <xs:documentation>
+        Represents the root element specifying data about a software component
+      </xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
+  <xs:complexType name="BaseElement">
+    <xs:annotation>
+      <xs:documentation>
+        Attributes common to all Elements in this schema
+      </xs:documentation>
+    </xs:annotation>
+
+    <xs:attribute
+      ref="xml:lang" >
+      <xs:annotation>
+        <xs:documentation>
+          Allow xml:lang attribute on any element.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+
+    <xs:anyAttribute
+      namespace="##other"
+      processContents="lax">
+      <xs:annotation>
+        <xs:documentation>
+          Allows any undeclared attributes on any element as long as the
+          attribute is placed in a different namespace.
+        </xs:documentation>
+      </xs:annotation>
+    </xs:anyAttribute>
+
+  </xs:complexType>
+
+  <xs:complexType name="Entity">
+    <xs:complexContent>
+      <xs:extension base="BaseElement">
+        <xs:annotation>
+          <xs:documentation>
+            Specifies the organizations related to the software component
+            referenced by this SWID tag.
+          </xs:documentation>
+        </xs:annotation>
+
+        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+          <xs:element
+            name="Meta"
+            type="Meta">
+            <xs:annotation>
+              <xs:documentation>
+                An open-ended collection of elements that can be used to attach
+                arbitrary metadata to an Entity.
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:sequence>
+
+        <xs:attribute
+          name="name"
+          use="required"
+          type="xs:string">
+          <xs:annotation>
+            <xs:documentation>
+              The name of the organization claiming a particular role in the
+              SWID tag.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="regid"
+          type="xs:anyURI"
+          use="optional"
+          default="http://invalid.unavailable">
+          <xs:annotation>
+            <xs:documentation>
+              The regid of the organization.  If the regid is unknown, the
+              value "invalid.unavailable" is provided by default (see
+              RFC 6761 for more details on the default value).
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="role"
+          type="xs:NMTOKENS"
+          use="required">
+          <xs:annotation>
+            <xs:documentation>
+              The relationship between this organization and this tag e.g. tag,
+              softwareCreator, licensor, tagCreator, etc.  The role of
+              tagCreator is required for every SWID tag.
+
+              EntityRole may include any role value, but the pre-defined roles
+              include: aggregator, distributor, licensor, softwareCreator,
+              tagCreator
+
+              Other roles will be defined as the market uses the SWID tags.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="thumbprint"
+          use="optional"
+          type="xs:string">
+          <xs:annotation>
+            <xs:documentation>
+              this value provides a hexadecimal string that contains a hash
+              (or thumbprint) of the signing entities certificate.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Evidence">
+    <xs:complexContent>
+      <xs:extension base="ResourceCollection">
+        <xs:annotation>
+          <xs:documentation>
+            The element is used to provide results from a scan of a system
+            where software that does not have a SWID tag is discovered.
+            This information is not provided by the software creator, and
+            is instead created when a system is being scanned and the
+            evidence for why software is believed to be installed on the
+            device is provided in the Evidence element.
+          </xs:documentation>
+        </xs:annotation>
+        <xs:attribute
+          name="date"
+          type="xs:dateTime">
+          <xs:annotation>
+            <xs:documentation>
+              Date and time the evidence was gathered.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="deviceId"
+          type="xs:string">
+          <xs:annotation>
+            <xs:documentation>
+              Identifier for the device the evidence was gathered from.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="FilesystemItem">
+    <xs:complexContent>
+      <xs:extension base="Meta">
+        <xs:annotation>
+          <xs:documentation>
+            Represents an individual file
+          </xs:documentation>
+        </xs:annotation>
+
+        <xs:attribute
+         name="key"
+         type="xs:boolean">
+          <xs:annotation>
+            <xs:documentation>
+              Files that are considered important or required for the use of
+              a software component.  Typical key files would be those which,
+              if not available on a system, would cause the software not to
+              execute.
+
+              Key files will typically be used to validate that software
+              referenced by the SWID tag is actually installed on a specific
+              computing device
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="location"
+          type="xs:string">
+          <xs:annotation>
+            <xs:documentation>
+              The directory or location where a file was found or can expected
+              to be located.  does not include the filename itself.  This can
+              be relative path from the 'root' attribute.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+        name="name"
+        type="xs:string"
+        use="required">
+          <xs:annotation>
+            <xs:documentation>
+              The filename without any path characters
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="root"
+          type="xs:string">
+          <xs:annotation>
+            <xs:documentation>
+              A system-specific root folder that the 'location'
+              attribute is an offset from. If this is not specified
+              the assumption is the 'root' is the same folder as
+              the location of the SWIDTAG.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:anyAttribute
+          processContents="lax">
+          <xs:annotation>
+            <xs:documentation>
+              Permits any user-defined attributes in file tags
+            </xs:documentation>
+          </xs:annotation>
+        </xs:anyAttribute>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Directory">
+    <xs:complexContent>
+      <xs:extension base="FilesystemItem">
+        <xs:annotation>
+          <xs:documentation>
+            Provides the ability to apply a directory structure to the files
+            defined in a Payload or Evidence element.
+          </xs:documentation>
+        </xs:annotation>
+
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element
+            name="Directory"
+            type="Directory">
+            <xs:annotation>
+              <xs:documentation>
+                A Directory element allows one or more directories to be
+                defined in the file structure.
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+
+          <xs:element
+            name="File"
+            type="File">
+            <xs:annotation>
+              <xs:documentation>
+                A File element that allows one or more files to be specified
+                for a given location.
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+        </xs:choice>
+
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="File">
+    <xs:complexContent>
+      <xs:extension base="FilesystemItem">
+        <xs:annotation>
+          <xs:documentation>
+            Represents an individual file
+          </xs:documentation>
+        </xs:annotation>
+
+        <xs:attribute
+          name="size"
+          type="xs:integer">
+          <xs:annotation>
+            <xs:documentation>
+              The file size in bytes of the file
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="version"
+          type="xs:string">
+          <xs:annotation>
+            <xs:documentation>
+              The file version
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Process">
+    <xs:complexContent>
+      <xs:extension base="Meta">
+        <xs:annotation>
+          <xs:documentation>
+            Provides process information for data that will show up in a
+            devices process table.
+          </xs:documentation>
+        </xs:annotation>
+
+        <xs:attribute
+          name="name"
+          type="xs:string"
+          use="required">
+          <xs:annotation>
+            <xs:documentation>
+              The process name as it will be found in the devices process
+              table.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="pid"
+          type="xs:integer">
+          <xs:annotation>
+            <xs:documentation>
+              The process ID for the executing process - note that this will
+              typically only be provided when the Process element is included as part
+              of Evidence.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Resource">
+    <xs:complexContent>
+      <xs:extension base="Meta">
+        <xs:annotation>
+          <xs:documentation>
+            A container that can be used to provide arbitrary resource
+            information about an application installed on a device, or
+            evidence collected from a device.
+          </xs:documentation>
+        </xs:annotation>
+
+        <xs:attribute
+          name="type"
+          type="xs:string"
+          use="required">
+          <xs:annotation>
+            <xs:documentation>
+              The type of resource (ie, registrykey, port, rootUrl)
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ResourceCollection">
+    <xs:complexContent>
+      <xs:extension base="BaseElement">
+        <xs:annotation>
+          <xs:documentation>
+            This type is used by Payload to provide details on what may rbe
+            installed on a device, and by Evidence to indicate what an
+            inventory process discovered on a device.
+          </xs:documentation>
+        </xs:annotation>
+
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element
+            name="Directory"
+            type="Directory">
+            <xs:annotation>
+              <xs:documentation>
+                One or more directory elements
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+
+          <xs:element
+            name="File"
+            type="File">
+            <xs:annotation>
+              <xs:documentation>
+                One or more File elements
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+
+          <xs:element
+            name="Process"
+            type="Process">
+            <xs:annotation>
+              <xs:documentation>
+                One or more Process elements
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+
+          <xs:element
+            name="Resource"
+            type="Resource">
+            <xs:annotation>
+              <xs:documentation>
+                One or more generic resource elements
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+
+        </xs:choice>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Link">
+    <xs:complexContent>
+      <xs:extension base="BaseElement">
+        <xs:annotation>
+          <xs:documentation>
+            A reference to any another item (can include details that are
+            related to the SWID tag such as details on where software
+            downloads can be found, vulnerability database associations,
+            use rights, etc).
+
+            This is modeled directly to match the HTML [LINK] element; it is
+            critical for streamlining software discovery scenarios that
+            these are kept consistent.
+          </xs:documentation>
+        </xs:annotation>
+
+        <xs:attribute
+          name="artifact"
+          type="xs:string"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              For installation media (rel="installationmedia") - dictates the
+              canonical name for the file.
+
+              Items with the same artifact name should be considered mirrors
+              of each other (so download from wherever works).
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="href"
+          type="xs:anyURI"
+          use="required" >
+          <xs:annotation>
+            <xs:documentation>
+              The link to the item being referenced.
+
+              The href can point to several different things, and can be any
+              of the following:
+
+              - a RELATIVE URI (no scheme) - which is interpreted depending on
+              context (ie, "./folder/supplemental.swidtag" )
+
+              - a physical file location with any system-acceptable
+              URI scheme (ie, file:// http:// https:// ftp:// ... etc )
+
+              - an URI with "swid:" as the scheme, which refers to another
+              swid by tagId. This URI would need to be resolved in the
+              context of the system by software that can lookup other
+              swidtags.( ie, "swid:2df9de35-0aff-4a86-ace6-f7dddd1ade4c" )
+
+              - an URI with "swidpath:" as the scheme, which refers to another
+              swid by an XPATH query.  This URI would need to be resolved in
+              the context of the system by software that can lookup other
+              swidtags, and select the appropriate one based on an XPATH
+              query. Examples:
+
+              swidpath://SoftwareIdentity[Entity/@regid='http://contoso.com']
+              would retrieve all swidtags that had an entity where the
+              regid was Contoso
+
+              swidpath://SoftwareIdentity[Meta/@persistentId='b0c55172-38e9-4e36-be86-92206ad8eddb']
+              would retrieve swidtags that matched the persistentId
+
+              See XPATH query standard : http://www.w3.org/TR/xpath20/
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="media"
+          type="Media"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              An attribute defined by the W3C Media Queries Recommendation
+              (see http://www.w3.org/TR/css3-mediaqueries/).
+
+              A hint to the consumer of the link to what the target item is
+              applicable for.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="ownership"
+          type="Ownership"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              Determines the relative strength of ownership of the target
+              piece of software.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="rel"
+          type="xs:NMTOKEN"
+          use="required">
+          <xs:annotation>
+            <xs:documentation>
+              The relationship between this SWID and the target file.
+
+              Relationships can be identified by referencing the IANA
+              registration library -
+              https://www.iana.org/assignments/link-relations/link-relations.xhtml.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="type"
+          type="MediaType"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              The IANA MediaType for the target file; this provides the
+              consumer with intelligence of what to expect.
+
+              See http://www.iana.org/assignments/media-types/media-types.xhtml
+              for more details on link type.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="use"
+          type="Use"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              Determines if the target software is a hard requirement or not
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="Meta">
+    <xs:complexContent>
+      <xs:extension base="BaseElement">
+        <xs:annotation>
+          <xs:documentation>
+            An open-ended collection of key/value data related to this SWID.
+          </xs:documentation>
+        </xs:annotation>
+
+        <xs:anyAttribute
+          processContents="lax">
+          <xs:annotation>
+            <xs:documentation>
+              Permits any user-defined attributes in Meta tags
+            </xs:documentation>
+          </xs:annotation>
+        </xs:anyAttribute>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="SoftwareIdentity">
+    <xs:complexContent>
+      <xs:extension base="BaseElement">
+        <xs:choice maxOccurs="unbounded">
+
+          <xs:element
+            name="Entity"
+            type="Entity"
+            minOccurs="1"
+            maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>
+                Specifies the organizations related to the software component
+                referenced by this SWID tag.
+
+                This has a minOccurs of 1 because the spec declares that
+                you must have at least a Entity with role='tagCreator'
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+
+          <xs:element
+            name="Evidence"
+            type="Evidence"
+            minOccurs="0"
+            maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation>
+                This element is used to provide results from a scan of a
+                system where software that does not have a SWID tag is
+                discovered.  This information is not provided by the
+                software creator, but is instead created when a system
+                is being scanned and the evidence for why software is
+                believed to be installed on the device is provided in the
+                Evidence element.
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+
+          <xs:element
+            name="Link"
+            type="Link"
+            minOccurs="0"
+            maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>
+                A reference to any another item (can include details that
+                are related to the SWID tag such as details on where software
+                downloads can be found, vulnerability database associations,
+                use rights, etc).
+
+                Note:  This is modelled directly to match the HTML [LINK]
+                element; it is critical for streamlining software discovery
+                scenarios that these are kept consistent.
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+
+          <xs:element
+            name="Meta"
+            type="SoftwareMeta"
+            minOccurs="0"
+            maxOccurs="unbounded">
+            <xs:annotation>
+              <xs:documentation>
+                An open-ended collection of key/value data related to this SWID.
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+
+          <xs:element
+            name="Payload"
+            type="ResourceCollection"
+            minOccurs="0"
+            maxOccurs="1">
+            <xs:annotation>
+              <xs:documentation>
+                The items that may be installed on a device when the software is
+                installed.  Note that Payload may be a superset of the items
+                installed and, depending on optimization systems for a device,
+                may or may not include every item that could be created or
+                executed on a device when software is installed.
+
+                In general, payload will be used to indicate the files that
+                may be installed with a software product and will often be a
+                superset of those files (i.e. if a particular optional
+                component is not installed, the files associated with that
+                component may be included in payload, but not installed on
+                the device).
+              </xs:documentation>
+            </xs:annotation>
+          </xs:element>
+          
+          <xs:any
+            namespace="##other"
+            processContents="lax"
+            minOccurs="0"
+            maxOccurs="unbounded" >
+            <xs:annotation>
+              <xs:documentation>
+                Allows any undeclared elements in the SoftwareIdentity element
+                as long as the element is placed in a different namespace.
+                
+                As xs:any supercedes an xs:element declaration, this continues
+                to support digital signatures using the ds:Signature element:
+                
+                  Signatures are not a mandatory part of the software
+                  identification tag standard, and can be used as required
+                  by any tag producer to ensure that sections of a tag are not
+                  modified and/or to provide authentication of the signer. If
+                  signatures are included in the software identification tag,
+                  they shall follow the W3C recommendation defining the XML
+                  signature syntax which provides message integrity
+                  authentication as well as signer authentication services for
+                  data of any type.
+              </xs:documentation>
+            </xs:annotation>
+          </xs:any>
+        
+        </xs:choice>
+
+        <xs:attribute
+          name="corpus"
+          type="xs:boolean"
+          use="optional"
+          default="false">
+          <xs:annotation>
+            <xs:documentation>
+              Set to true, if this attribute specifies that this SWID tag is a
+              collection of information that describes the pre-installation
+              data of software component.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="patch"
+          type="xs:boolean"
+          use="optional"
+          default="false">
+          <xs:annotation>
+            <xs:documentation>
+              Set to true if this SWID describes a product patch or
+              modification to a different software element.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="media"
+          type="Media"
+          use="optional" >
+          <xs:annotation>
+            <xs:documentation>
+              media is a hint to the tag consumer to understand what this
+              SWID tag applies to (see the [Link] tags media attribute).
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="name"
+          type="xs:string"
+          use="required">
+          <xs:annotation>
+            <xs:documentation>
+              This attribute provides the software component name as it would
+              typically be referenced.  For example, what would be seen in the
+              add/remove dialog on a Windows device, or what is specified as
+              the name of a packaged software product or a patch identifier
+              name on a Linux device.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="supplemental"
+          type="xs:boolean"
+          use="optional"
+          default="false">
+          <xs:annotation>
+            <xs:documentation>
+              Specifies that this tag provides supplemental tag data that can
+              be merged with primary tag data to create a complete record of
+              the software information.
+
+              Supplemental tags will often be provided at install time and may
+              be provided by different entities (such as the tag consumer, or
+              a Value Added Reseller).
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="tagId"
+          type="xs:string"
+          use="required" >
+          <xs:annotation>
+            <xs:documentation>
+              tagId shall be a globally unique identifier and should be
+              assigned a GUID reference (see ISO/IEC 19770-5 definition
+              for GUID).
+
+              The tagID provides a unique reference for the specific product,
+              version, edition, revision, etc (essentially, the same binary
+              distribution).  If two tagIDs match and the tagCreator is the
+              same, the underlying products they represent are expected to be
+              exactly the same.
+
+              This allows IT systems to identify if a software item (for
+              example, a patch) is installed simply by referencing the
+              specific tagID value which is likely to be readily available
+              in a software inventory.
+
+              It is recommended, when possible, that a 16 byte GUID
+              be used for this field as this provides global uniqueness without
+              a significant amount of overhead for space.
+
+              If use of a 16 byte GUID is not possible, a text based globally
+              unique ID may be constructed, this ID should include a unique
+              naming authority for the tagCreator and sufficient additional
+              details that the tagId is unique for the software product,
+              version, edition, revision, etc.  This would likely look as
+              follows (+ is used as a string concatenation symbol):
+
+              regid + productName + version + edition + revision + ...
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="tagVersion"
+          type="xs:integer"
+          use="optional"
+          default="0">
+          <xs:annotation>
+            <xs:documentation>
+              The tagVersion indicates if a specific release of a software
+              product has more than one tag that can represent that specific
+              release.  This may be the case if a software tag producer creates
+              and releases an incorrect tag that they subsequently want to fix,
+              but with no underlying changes to the product the SWID tag
+              represents.  This could happen if, for example, a patch is
+              distributed that has a Link reference that does not cover all the
+              various software releases it can patch.  A newer SWID tag for that
+              patch can be generated and the tagVersion value incremented to
+              indicate that the data is updated.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="version"
+          type="xs:string"
+          use="optional"
+          default="0.0" >
+          <xs:annotation>
+            <xs:documentation>
+              Underlying development version for the software component.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="versionScheme"
+          type="xs:NMTOKEN"
+          default="multipartnumeric">
+          <xs:annotation>
+            <xs:documentation>
+              Scheme used for the version number.  Some possible common values are:
+
+              value="alphanumeric"
+                Strictly a string, sorting alphanumericaly
+        
+              value="decimal"
+                A floating point number : ( ie, 1.25 is less than 1.3 )
+        
+              value="multipartnumeric"
+                Numbers seperated by dots, where the numbers are interpreted as
+                integers (ie, 1.2.3 ,  1.4.5.6 , 1.2.3.4.5.6.7 )
+        
+              value="multipartnumeric+suffix"
+                Numbers seperated by dots, where the numbers are interpreted as
+                integers with an additional string suffix: (ie, 1.2.3a)
+          
+              value="semver"
+                Follows the semver.org spec
+
+              value="unknown"
+                Unknown, no attempt should be made to order these
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="SoftwareMeta">
+    <xs:complexContent>
+      <xs:extension base="Meta">
+        <xs:annotation>
+          <xs:documentation>
+            An open-ended collection of key/value data related to this SWID.
+
+            The attributes included in this Element are predefined attributes
+            to ensure common usage across the industry.  The schema allows for
+            any additional attribute to be included in a SWID tag, though it is
+            recommended that industry norms for new attributes are defined and
+            followed to the degree possible.
+          </xs:documentation>
+        </xs:annotation>
+
+        <xs:attribute
+          name="activationStatus"
+          type="xs:string"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              Identification of the activation status of this software title
+              (e.g. Trial, Serialized, Licensed, Unlicensed, etc).  Typically,
+              this is used in supplemental tags.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="channelType"
+          type="xs:string"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              Provides information on which channel this particular
+              software was targeted for (e.g. Volume, Retail, OEM,
+              Academic, etc).  Typically used in supplemental tags.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="colloquialVersion"
+          type="xs:string"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              The informal or colloquial version of the product (i.e. 2013).
+              Note that this version may be the same through multiple releases
+              of a software product where the version specified in
+              SoftwareEntity is much more specific and will change for each
+              software release.
+
+              Note that this representation of version is typically used to
+              identify a group of specific software releases that are part of
+              the same release/support infrastructure
+              (i.e. Fabrikam Office 2013).  This version is used for string
+              comparisons only and is not compared to be an earlier or later
+              release (that is done via the SoftwareEntity version).
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="description"
+          type="xs:string"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              A longer, detailed description of the software.  This description
+              can be multiple sentences (differentiated from summary which is
+              a very short, one-sentence description).
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="edition"
+          type="xs:string"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              The variation of the product (Extended, Enterprise, Professional,
+              Standard etc)
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="entitlementDataRequired"
+          type="xs:boolean"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              An indicator to determine if there should be accompanying proof
+              of entitlement when a software license reconciliation is
+              completed.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="entitlementKey"
+          type="xs:string"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              A vendor-specific textual key that can be used to reconcile the
+              validity of an entitlement. (e.g. serial number, product or
+              license key).
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="generator"
+          type="xs:string"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              The name of the software tool that created a SWID tag.  This
+              element is typically used if tags are created on the fly, or
+              based on a catalogue based analysis for data found on a
+              computing device.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+              name="persistentId"
+              type="xs:string"
+              use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              A GUID used to represent products installed where the products
+              are related, but may be different versions.  See one
+              representation of this value through the use of what, in a
+              windows installation process is referred to as an upgradeCode
+              - http://msdn.microsoft.com/en-us/library/aa372375(v=vs.85).aspx
+              as one example of the use of this value.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="product"
+          type="xs:string"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              The base name of the product (e.g. Office, Creative Suites,
+              Websphere, etc).
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="productFamily"
+          type="xs:string"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              The overall product family this software belongs to.  Product
+              family is not used to identify that a product is part of a
+              suite, but is instead used when a set of products that are all
+              related may be installed on multiple different devices.
+
+              For example, an Enterprise backup system may consist of a backup
+              server, multiple different backup systems that support mail
+              servers, databases and ERP systems as well as individual software
+              items that backup client devices.  In this case all software
+              titles that are part of the backup system would have the same
+              productFamily name so they can be grouped together in reporting
+              systems.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="revision"
+          type="xs:string"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              The informal or colloquial representation of the sub-version of
+              the given product (ie, SP1, R2, RC1, Beta 2, etc).  Note that the
+              SoftwareIdentity.version will provide very exact version details,
+              the revision is intended for use in environments where reporting
+              on the informal or colloquial representation of the software is
+              important (for example, if for a certain business process, an
+              organization recognizes that it must have ServicePack 1 or later
+              of a specific product installed on all devices, they can use the
+              revision data value to quickly identify any devices that do not
+              meet this requirement).
+
+              Depending on how a software organizations distributes revisions,
+              this value could be specified in a primary (if distributed as an
+              upgrade) or supplemental (if distributed as a patch) SWID tag.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="summary"
+          type="xs:string"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              A short (one-sentence) description of the software.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="unspscCode"
+          type="xs:string"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              An 8 digit code that provides UNSPSC classification of the
+              software product this SWID tag identifies.  For more
+              information see, http://www.unspsc.org/
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+
+        <xs:attribute
+          name="unspscVersion"
+          type="xs:string"
+          use="optional">
+          <xs:annotation>
+            <xs:documentation>
+              The version of the UNSPSC code used to define the UNSPSC code
+              value. For more information see, http://www.unspsc.org/.
+            </xs:documentation>
+          </xs:annotation>
+        </xs:attribute>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:simpleType name="Media">
+    <xs:annotation>
+      <xs:documentation>
+        An expression that the document evaluator can use to determine if the
+        target of the link is applicable to the current platform (the host
+        environment)
+
+        Used as an optimization hint to notify a system that it can
+        ignore something when it's not likely to be used.
+
+        The format of this string is modeled upon the MediaQuery definition at
+        http://www.w3.org/TR/css3-mediaqueries/
+
+        This is one or more EXPRESSIONs where the items are connected
+        with an OPERATOR:
+
+        media="EXPRESSION [[OPERATOR] [EXPRESSION]...]"
+
+        EXPRESSION is processed case-insensitive and defined either :
+        (ENVIRONMENT)
+        indicates the presence of the environment
+        or
+        ([PREFIX-]ENVIRONMENT.ATTRIBUTE:VALUE)
+        indicates a comparison of an attribute of the environment.
+
+        ENVIRONMENT is a text identifier that specifies any software,hardware
+        feature or aspect of the system the software is intended to run in.
+
+        Common ENVIRONMENTs include (but not limited to):
+        linux
+        windows
+        java
+        powershell
+        ios
+        chipset
+        peripheral
+
+        ATTRIBUTE is a property of an ENVIRONMENT with a specific value.
+        Common attributes include (but not limited to):
+        version
+        vendor
+        architecture
+
+        PREFIX is defined as one of:
+        MIN    # property has a minimum value of VALUE
+        MAX    # property has a maximum value of VALUE
+
+        if a PREFIX is not provided, then the property should equal VALUE
+
+        OPERATOR is defined of one of:
+        AND
+        NOT
+
+        Examples:
+        media="(windows)"
+        # applies to only systems that identify themselves as 'Windows'
+
+        media="(windows) not (windows.architecture:x64)"
+        # applies to only systems that identify
+        # themselves as windows and are not for an x64 cpu
+
+        media="(windows) and (min-windows.version:6.1)"
+        # applies to systems that identify themselves as
+        # windows and at least version 6.1
+
+        media="(linux) and (linux.vendor:redhat) and (min-linux.kernelversion:3.0)"
+        # applies to systems that identify themselves as
+        # linux, made by redhat and with a kernel version of at least 3.0
+
+        media="(freebsd) and (min-freebsd.kernelversion:6.6)"
+        # applies to systems that identify themselves as
+        # freebsd, with a kernel version of at least 6.6
+
+        media="(powershell) and (min-powershell.version:3.0)"
+        # applies to systems that have powershell 3.0 or greater
+
+        Properties are expected to be able to be resolved by the host
+        environment without having to do significant computation.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="MediaType">
+    <xs:annotation>
+      <xs:documentation>
+        The IANA MediaType for the target href; this provides the SWID tag
+        consumer with intelligence of what to expect.
+
+        See http://www.iana.org/assignments/media-types/media-types.xhtml
+        for more details on link type.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="Ownership">
+    <xs:restriction base="xs:NMTOKEN">
+
+      <xs:enumeration value="abandon">
+        <xs:annotation>
+          <xs:documentation>
+            Determines the relative strength of ownership of the target
+            piece of software.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+
+      <xs:enumeration
+        value="private">
+        <xs:annotation>
+          <xs:documentation>
+            If this is uninstalled, then the [Link]'d software should be removed
+            too.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+
+      <xs:enumeration
+        value="shared">
+        <xs:annotation>
+          <xs:documentation>
+            If this is uninstalled, then the [Link]'d software should be removed
+            if nobody else is sharing it
+          </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="Use">
+    <xs:annotation>
+      <xs:documentation>
+        Determines if the target software is a hard requirement.
+      </xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:NMTOKEN">
+
+      <xs:enumeration
+        value="required">
+        <xs:annotation>
+          <xs:documentation>
+            The [Link]'d software is absolutely required for installation
+          </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+
+      <xs:enumeration
+        value="recommended">
+        <xs:annotation>
+          <xs:documentation>
+            Not absolutely required, but install unless directed not to
+          </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+
+      <xs:enumeration
+        value="optional">
+        <xs:annotation>
+          <xs:documentation>
+            Not absolutely required, install only when asked
+          </xs:documentation>
+        </xs:annotation>
+      </xs:enumeration>
+
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
