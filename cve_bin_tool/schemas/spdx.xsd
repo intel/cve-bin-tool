@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Document">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="SPDXID" type="xs:string" />
+        <xs:element name="spdxVersion" type="xs:string" />
+        <xs:element name="creationInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="comment" type="xs:string" />
+              <xs:element name="created" type="xs:dateTime" />
+              <xs:element maxOccurs="unbounded" name="creators" type="xs:string" />
+              <xs:element name="licenseListVersion" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="name" type="xs:string" />
+        <xs:element name="dataLicense" type="xs:string" />
+        <xs:element name="comment" type="xs:string" />
+        <xs:element name="externalDocumentRefs">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="externalDocumentId" type="xs:string" />
+              <xs:element name="checksum">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="algorithm" type="xs:string" />
+                    <xs:element name="checksumValue" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="spdxDocument" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element maxOccurs="unbounded" name="hasExtractedLicensingInfos">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="licenseId" type="xs:string" />
+              <xs:element minOccurs="0" name="comment" type="xs:string" />
+              <xs:element name="extractedText" type="xs:string" />
+              <xs:element minOccurs="0" name="name" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="seeAlsos" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element maxOccurs="unbounded" name="annotations">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="annotationDate" type="xs:dateTime" />
+              <xs:element name="annotationType" type="xs:string" />
+              <xs:element name="annotator" type="xs:string" />
+              <xs:element name="comment" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="documentNamespace" type="xs:string" />
+        <xs:element maxOccurs="unbounded" name="documentDescribes" type="xs:string" />
+        <xs:element maxOccurs="unbounded" name="packages">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SPDXID" type="xs:string" />
+              <xs:element minOccurs="0" name="annotations">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="annotationDate" type="xs:dateTime" />
+                    <xs:element name="annotationType" type="xs:string" />
+                    <xs:element name="annotator" type="xs:string" />
+                    <xs:element name="comment" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="attributionTexts" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="checksums">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="algorithm" type="xs:string" />
+                    <xs:element name="checksumValue" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="copyrightText" type="xs:string" />
+              <xs:element minOccurs="0" name="description" type="xs:string" />
+              <xs:element name="downloadLocation" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="externalRefs">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element minOccurs="0" name="comment" type="xs:string" />
+                    <xs:element name="referenceCategory" type="xs:string" />
+                    <xs:element name="referenceLocator" type="xs:string" />
+                    <xs:element name="referenceType" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="filesAnalyzed" type="xs:boolean" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="hasFiles" type="xs:string" />
+              <xs:element name="homepage" type="xs:string" />
+              <xs:element minOccurs="0" name="licenseComments" type="xs:string" />
+              <xs:element name="licenseConcluded" type="xs:string" />
+              <xs:element name="licenseDeclared" type="xs:string" />
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="licenseInfoFromFiles" type="xs:string" />
+              <xs:element name="name" type="xs:string" />
+              <xs:element minOccurs="0" name="originator" type="xs:string" />
+              <xs:element minOccurs="0" name="packageFileName" type="xs:string" />
+              <xs:element minOccurs="0" name="packageVerificationCode">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="packageVerificationCodeExcludedFiles" type="xs:string" />
+                    <xs:element name="packageVerificationCodeValue" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="sourceInfo" type="xs:string" />
+              <xs:element minOccurs="0" name="summary" type="xs:string" />
+              <xs:element minOccurs="0" name="supplier" type="xs:string" />
+              <xs:element minOccurs="0" name="versionInfo" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element maxOccurs="unbounded" name="files">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SPDXID" type="xs:string" />
+              <xs:element minOccurs="0" name="annotations">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="annotationDate" type="xs:dateTime" />
+                    <xs:element name="annotationType" type="xs:string" />
+                    <xs:element name="annotator" type="xs:string" />
+                    <xs:element name="comment" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element maxOccurs="unbounded" name="checksums">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="algorithm" type="xs:string" />
+                    <xs:element name="checksumValue" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element minOccurs="0" name="comment" type="xs:string" />
+              <xs:element name="copyrightText" type="xs:string" />
+              <xs:element maxOccurs="unbounded" name="fileContributors" type="xs:string" />
+              <xs:element name="fileName" type="xs:string" />
+              <xs:element name="fileTypes" type="xs:string" />
+              <xs:element minOccurs="0" name="licenseComments" type="xs:string" />
+              <xs:element name="licenseConcluded" type="xs:string" />
+              <xs:element maxOccurs="unbounded" name="licenseInfoInFiles" type="xs:string" />
+              <xs:element minOccurs="0" name="noticeText" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="snippets">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SPDXID" type="xs:string" />
+              <xs:element name="comment" type="xs:string" />
+              <xs:element name="copyrightText" type="xs:string" />
+              <xs:element name="licenseComments" type="xs:string" />
+              <xs:element name="licenseConcluded" type="xs:string" />
+              <xs:element name="licenseInfoInSnippets" type="xs:string" />
+              <xs:element name="name" type="xs:string" />
+              <xs:element maxOccurs="unbounded" name="ranges">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="endPointer">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="lineNumber" type="xs:unsignedByte" />
+                          <xs:element minOccurs="0" name="offset" type="xs:unsignedShort" />
+                          <xs:element name="reference" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="startPointer">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element minOccurs="0" name="lineNumber" type="xs:unsignedByte" />
+                          <xs:element minOccurs="0" name="offset" type="xs:unsignedShort" />
+                          <xs:element name="reference" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="snippetFromFile" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element maxOccurs="unbounded" name="relationships">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="spdxElementId" type="xs:string" />
+              <xs:element name="relatedSpdxElement" type="xs:string" />
+              <xs:element name="relationshipType" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
