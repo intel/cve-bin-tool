@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: zstandard
+Version: 0.18.0
+Summary: Zstandard bindings for Python
+Home-page: https://github.com/indygreg/python-zstandard
+Author: Gregory Szorc
+Author-email: gregory.szorc@gmail.com
+License: BSD
+Keywords: zstandard,zstd,compression
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Development Status :: 5 - Production/Stable
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: cffi (>=1.11) ; platform_python_implementation == "PyPy"
+Provides-Extra: cffi
+Requires-Dist: cffi (>=1.11) ; platform_python_implementation == "PyPy"
