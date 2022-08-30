@@ -1,0 +1,45 @@
+// Copyright (C) 2022 Intel Corporation
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+syntax = "proto3";
+
+package sbom;
+
+message Cyclone{
+    string bomFormat = 1;
+    string specVersion = 2;
+    string serialNumber = 3;
+    uint32 version = 4;
+
+    message Application{
+        string name = 1;
+        string version = 2;
+        string cpe = 3;
+
+        message Swid{
+            string tagId = 1;
+            string name = 2;
+            string version = 3;
+
+            message Text{
+                string contentType = 1;
+                string encoding = 2;
+                string content = 3;
+            }
+
+            Text text = 4;
+        }
+
+        Swid swid = 4;
+    }
+
+    message Library{
+        string group = 1;
+        string name = 2;
+        string version = 3;
+        string purl = 4;
+    }
+
+    repeated Application applications = 5;
+    repeated Library libraries = 6;
+}
