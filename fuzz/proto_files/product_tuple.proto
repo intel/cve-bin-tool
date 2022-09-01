@@ -1,0 +1,12 @@
+// Copyright (C) 2022 Intel Corporation
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+// Prototype for a standard "vendor, product, version" tuple used in CSV and internal formats
+
+syntax = "proto3";
+
+message ProductData {
+    string vendor = 1;
+    string product = 2;
+    string version = 3;
+}
