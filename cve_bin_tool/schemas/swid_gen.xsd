@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://standards.iso.org/iso/19770/-2/2015/schema.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="SoftwareIdentity" type="sch:SoftwareIdentityType" xmlns:sch="http://standards.iso.org/iso/19770/-2/2015/schema.xsd"/>
+  <xs:complexType name="EntityType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="name"/>
+        <xs:attribute type="xs:string" name="role"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="MetaType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="generator"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="LinkType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="rel" use="optional"/>
+        <xs:attribute type="xs:string" name="href" use="optional"/>
+        <xs:attribute type="xs:string" name="use" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+  <xs:complexType name="SoftwareIdentityType">
+    <xs:sequence>
+      <xs:element type="sch:EntityType" name="Entity" xmlns:sch="http://standards.iso.org/iso/19770/-2/2015/schema.xsd"/>
+      <xs:element type="sch:MetaType" name="Meta" xmlns:sch="http://standards.iso.org/iso/19770/-2/2015/schema.xsd"/>
+      <xs:element type="sch:LinkType" name="Link" maxOccurs="unbounded" minOccurs="0" xmlns:sch="http://standards.iso.org/iso/19770/-2/2015/schema.xsd"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="name"/>
+    <xs:attribute type="xs:string" name="tagId"/>
+    <xs:attribute type="xs:string" name="version"/>
+  </xs:complexType>
+</xs:schema>
