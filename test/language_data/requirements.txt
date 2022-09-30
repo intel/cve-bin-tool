@@ -1,0 +1,19 @@
+rich
+plotly
+jinja2>=2.11.3
+beautifulsoup4
+aiohttp[speedups]>=3.7.4
+toml
+pyyaml>=5.4
+jsonschema>=3.0.2
+rpmfile>=1.0.6
+zstandard; python_version >= "3.4"
+distro
+defusedxml
+xmlschema
+importlib_metadata; python_version < "3.8"
+requests
+urllib3>=1.26.5 # dependency of requests added explictly to avoid CVEs
+gsutil
+cvss
+packaging
