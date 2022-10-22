@@ -1,0 +1,177 @@
+{
+   "abstract" : "File path utility",
+   "author" : [
+      "David Golden <dagolden@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 6.025, CPAN::Meta::Converter version 2.150010",
+   "license" : [
+      "apache_2_0"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : 2
+   },
+   "name" : "Path-Tiny",
+   "no_index" : {
+      "directory" : [
+         "corpus",
+         "examples",
+         "t",
+         "xt"
+      ],
+      "package" : [
+         "DB",
+         "flock"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.17",
+            "perl" : "5.008001"
+         },
+         "suggests" : {
+            "JSON::PP" : "2.27300"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Dist::Zilla" : "5",
+            "Dist::Zilla::Plugin::MinimumPerl" : "0",
+            "Dist::Zilla::Plugin::OnlyCorePrereqs" : "0",
+            "Dist::Zilla::Plugin::Prereqs" : "0",
+            "Dist::Zilla::Plugin::ReleaseStatus::FromVersion" : "0",
+            "Dist::Zilla::Plugin::RemovePrereqs" : "0",
+            "Dist::Zilla::PluginBundle::DAGOLDEN" : "0.072",
+            "File::Spec" : "0",
+            "File::Temp" : "0",
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
+            "Pod::Coverage::TrustPod" : "0",
+            "Pod::Wordlist" : "0",
+            "Software::License::Apache_2_0" : "0",
+            "Test::CPAN::Meta" : "0",
+            "Test::MinimumVersion" : "0",
+            "Test::More" : "0",
+            "Test::Perl::Critic" : "0",
+            "Test::Pod" : "1.41",
+            "Test::Pod::Coverage" : "1.08",
+            "Test::Portability::Files" : "0",
+            "Test::Spelling" : "0.12",
+            "Test::Version" : "1"
+         }
+      },
+      "runtime" : {
+         "recommends" : {
+            "Unicode::UTF8" : "0.58"
+         },
+         "requires" : {
+            "Carp" : "0",
+            "Cwd" : "0",
+            "Digest" : "1.03",
+            "Digest::SHA" : "5.45",
+            "Encode" : "0",
+            "Exporter" : "5.57",
+            "Fcntl" : "0",
+            "File::Compare" : "0",
+            "File::Copy" : "0",
+            "File::Glob" : "0",
+            "File::Path" : "2.07",
+            "File::Spec" : "0.86",
+            "File::Temp" : "0.19",
+            "File::stat" : "0",
+            "constant" : "0",
+            "overload" : "0",
+            "perl" : "5.008001",
+            "strict" : "0",
+            "warnings" : "0",
+            "warnings::register" : "0"
+         }
+      },
+      "test" : {
+         "recommends" : {
+            "CPAN::Meta" : "2.120900",
+            "Test::FailWarnings" : "0",
+            "Test::MockRandom" : "0"
+         },
+         "requires" : {
+            "Digest::MD5" : "0",
+            "ExtUtils::MakeMaker" : "0",
+            "File::Basename" : "0",
+            "File::Spec" : "0.86",
+            "File::Spec::Functions" : "0",
+            "File::Spec::Unix" : "0",
+            "File::Temp" : "0.19",
+            "Test::More" : "0.96",
+            "lib" : "0",
+            "open" : "0",
+            "perl" : "5.008001"
+         }
+      }
+   },
+   "provides" : {
+      "Path::Tiny" : {
+         "file" : "lib/Path/Tiny.pm",
+         "version" : "0.130"
+      },
+      "Path::Tiny::Error" : {
+         "file" : "lib/Path/Tiny.pm",
+         "version" : "0.130"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/dagolden/Path-Tiny/issues"
+      },
+      "homepage" : "https://github.com/dagolden/Path-Tiny",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/dagolden/Path-Tiny.git",
+         "web" : "https://github.com/dagolden/Path-Tiny"
+      }
+   },
+   "version" : "0.130",
+   "x_authority" : "cpan:DAGOLDEN",
+   "x_contributors" : [
+      "Alex Efros <powerman@powerman.name>",
+      "Aristotle Pagaltzis <pagaltzis@gmx.de>",
+      "Chris Williams <bingos@cpan.org>",
+      "Dan Book <grinnz@grinnz.com>",
+      "Dave Rolsky <autarch@urth.org>",
+      "David Steinbrunner <dsteinbrunner@pobox.com>",
+      "Doug Bell <madcityzen@gmail.com>",
+      "Elvin Aslanov <rwp.primary@gmail.com>",
+      "Flavio Poletti <flavio@polettix.it>",
+      "Gabor Szabo <szabgab@cpan.org>",
+      "Gabriel Andrade <gabiruh@gmail.com>",
+      "George Hartzell <hartzell@cpan.org>",
+      "Geraud Continsouzas <geraud@scsi.nc>",
+      "Goro Fuji <gfuji@cpan.org>",
+      "Graham Knop <haarg@haarg.org>",
+      "Graham Ollis <plicease@cpan.org>",
+      "Ian Sillitoe <ian@sillit.com>",
+      "James Hunt <james@niftylogic.com>",
+      "John Karr <brainbuz@brainbuz.org>",
+      "Karen Etheridge <ether@cpan.org>",
+      "Mark Ellis <mark.ellis@cartridgesave.co.uk>",
+      "Martin H. Sluka <fany@cpan.org>",
+      "Martin Kjeldsen <mk@bluepipe.dk>",
+      "Michael G. Schwern <mschwern@cpan.org>",
+      "Nigel Gregoire <nigelgregoire@gmail.com>",
+      "Philippe Bruhat (BooK) <book@cpan.org>",
+      "regina-verbae <regina-verbae@users.noreply.github.com>",
+      "Roy Ivy III <rivy@cpan.org>",
+      "Shlomi Fish <shlomif@shlomifish.org>",
+      "Smylers <Smylers@stripey.com>",
+      "Tatsuhiko Miyagawa <miyagawa@bulknews.net>",
+      "Toby Inkster <tobyink@cpan.org>",
+      "Yanick Champoux <yanick@babyl.dyndns.org>",
+      "\uae40\ub3c4\ud615 - Keedi Kim <keedi@cpan.org>"
+   ],
+   "x_generated_by_perl" : "v5.36.0",
+   "x_serialization_backend" : "Cpanel::JSON::XS version 4.29",
+   "x_spdx_expression" : "Apache-2.0"
+}
+
