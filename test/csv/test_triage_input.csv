@@ -1,0 +1,10 @@
+vendor,product,version
+plot,plotly,5.10.0
+pocoo,jinja2,3.1.2
+aiohttp_project,aiohttp,3.8.1
+pyyaml,pyyaml,6.0
+python,requests,2.28.1
+python,urllib3,1.26.12
+skontar,cvss,2.5
+getbootstrap,bootstrap,5.2.0
+plotly,plotly.js,2.13.2
