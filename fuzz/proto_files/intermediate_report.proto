@@ -1,0 +1,22 @@
+// Copyright (C) 2022 Intel Corporation
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+syntax = "proto3";
+
+package fuzzing;
+
+import "cve_data.proto";
+
+message IntermediateReport {
+    message Metadata {
+        int64 timestamp = 1;
+        string tag = 2;
+        string scanned_dir = 3;
+        uint32 products_with_cve = 4;
+        uint32 products_without_cve = 5;
+        uint32 total_files = 6;
+    }
+
+    Metadata metadata = 1;
+    repeated CVE report = 2;
+}
