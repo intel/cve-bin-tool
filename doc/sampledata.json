@@ -1,0 +1,226 @@
+[
+    {
+        "country_code": "US",
+        "num_downloads": "3326",
+        "Country": "United States",
+        "Continent": "NA",
+        "Latitude": 39.7837304,
+        "Longitude": -100.445882
+    },
+    {
+        "country_code": "MY",
+        "num_downloads": "1777",
+        "Country": "Malaysia",
+        "Continent": "AS",
+        "Latitude": 4.5693754,
+        "Longitude": 102.2656823
+    },
+    {
+        "country_code": "DE",
+        "num_downloads": "290",
+        "Country": "Germany",
+        "Continent": "EU",
+        "Latitude": 51.1638175,
+        "Longitude": 10.4478313
+    },
+    {
+        "country_code": "CA",
+        "num_downloads": "77",
+        "Country": "Canada",
+        "Continent": "NA",
+        "Latitude": 61.0666922,
+        "Longitude": -107.991707
+    },
+    {
+        "country_code": "CN",
+        "num_downloads": "44",
+        "Country": "China",
+        "Continent": "AS",
+        "Latitude": 35.000074,
+        "Longitude": 104.999927
+    },
+    {
+        "country_code": "JP",
+        "num_downloads": "34",
+        "Country": "Japan",
+        "Continent": "AS",
+        "Latitude": 36.5748441,
+        "Longitude": 139.2394179
+    },
+    {
+        "country_code": "GB",
+        "num_downloads": "32",
+        "Country": "United Kingdom",
+        "Continent": "EU",
+        "Latitude": 54.7023545,
+        "Longitude": -3.2765753
+    },
+    {
+        "country_code": "RU",
+        "num_downloads": "31",
+        "Country": "Russian Federation",
+        "Continent": "EU",
+        "Latitude": 64.6863136,
+        "Longitude": 97.7453061
+    },
+    {
+        "country_code": "SE",
+        "num_downloads": "16",
+        "Country": "Sweden",
+        "Continent": "EU",
+        "Latitude": 59.6749712,
+        "Longitude": 14.5208584
+    },
+    {
+        "country_code": "IL",
+        "num_downloads": "11",
+        "Country": "Israel",
+        "Continent": "AS",
+        "Latitude": 30.8124247,
+        "Longitude": 34.8594762
+    },
+    {
+        "country_code": "KR",
+        "num_downloads": "8",
+        "Country": "Korea, Republic of",
+        "Continent": "AS",
+        "Latitude": 55.8215537,
+        "Longitude": 49.132971
+    },
+    {
+        "country_code": "FR",
+        "num_downloads": "5",
+        "Country": "France",
+        "Continent": "EU",
+        "Latitude": 46.603354,
+        "Longitude": 1.8883335
+    },
+    {
+        "country_code": "TW",
+        "num_downloads": "4",
+        "Country": "Taiwan, Province of China",
+        "Continent": "AS",
+        "Latitude": 0.0,
+        "Longitude": 0.0
+    },
+    {
+        "country_code": "NL",
+        "num_downloads": "3",
+        "Country": "Netherlands",
+        "Continent": "EU",
+        "Latitude": 52.2434979,
+        "Longitude": 5.6343227
+    },
+    {
+        "country_code": "IN",
+        "num_downloads": "2",
+        "Country": "India",
+        "Continent": "AS",
+        "Latitude": 22.3511148,
+        "Longitude": 78.6677428
+    },
+    {
+        "country_code": "IT",
+        "num_downloads": "2",
+        "Country": "Italy",
+        "Continent": "EU",
+        "Latitude": 42.6384261,
+        "Longitude": 12.674297
+    },
+    {
+        "country_code": "PL",
+        "num_downloads": "1",
+        "Country": "Poland",
+        "Continent": "EU",
+        "Latitude": 52.215933,
+        "Longitude": 19.134422
+    },
+    {
+        "country_code": "AT",
+        "num_downloads": "1",
+        "Country": "Austria",
+        "Continent": "EU",
+        "Latitude": 47.59397,
+        "Longitude": 14.12456
+    },
+    {
+        "country_code": "NO",
+        "num_downloads": "1",
+        "Country": "Norway",
+        "Continent": "EU",
+        "Latitude": 61.1529386,
+        "Longitude": 8.7876653
+    },
+    {
+        "country_code": "PT",
+        "num_downloads": "1",
+        "Country": "Portugal",
+        "Continent": "EU",
+        "Latitude": 39.6621648,
+        "Longitude": -8.1353519
+    },
+    {
+        "country_code": "FI",
+        "num_downloads": "1",
+        "Country": "Finland",
+        "Continent": "EU",
+        "Latitude": 63.2467777,
+        "Longitude": 25.9209164
+    },
+    {
+        "country_code": "PH",
+        "num_downloads": "1",
+        "Country": "Philippines",
+        "Continent": "AS",
+        "Latitude": 12.7503486,
+        "Longitude": 122.7312101
+    },
+    {
+        "country_code": "AZ",
+        "num_downloads": "1",
+        "Country": "Azerbaijan",
+        "Continent": "AS",
+        "Latitude": 40.3936294,
+        "Longitude": 47.7872508
+    },
+    {
+        "country_code": "BE",
+        "num_downloads": "1",
+        "Country": "Belgium",
+        "Continent": "EU",
+        "Latitude": 50.6402809,
+        "Longitude": 4.6667145
+    },
+    {
+        "country_code": "HK",
+        "num_downloads": "1",
+        "Country": "Hong Kong",
+        "Continent": "AS",
+        "Latitude": 22.2793278,
+        "Longitude": 114.1628131
+    },
+    {
+        "country_code": "DK",
+        "num_downloads": "1",
+        "Country": "Denmark",
+        "Continent": "EU",
+        "Latitude": 55.670249,
+        "Longitude": 10.3333283
+    },
+    {
+        "country_code": "CH",
+        "num_downloads": "1",
+        "Country": "Switzerland",
+        "Continent": "EU",
+        "Latitude": 46.7985624,
+        "Longitude": 8.2319736
+    },
+    {
+        "country_code": "BR",
+        "num_downloads": "1",
+        "Country": "Brazil",
+        "Continent": "SA",
+        "Latitude": -10.3333333,
+        "Longitude": -53.2
+    }
+]
