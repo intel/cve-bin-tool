@@ -1,0 +1,20 @@
+// Copyright (C) 2023 Intel Corporation
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+syntax = "proto3";
+
+message CargoLock {
+    message Package {
+        string name = 1;
+        string version = 2;
+        optional string source = 3;
+        optional string checksum = 4;
+        repeated Dependencies dependency = 5;
+    }
+    message Dependencies {
+        string name = 1;
+        optional string version = 2;
+        optional string url = 3;
+    }
+    repeated Package packages = 1;
+}
