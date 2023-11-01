@@ -1,0 +1,27 @@
+// Copyright (C) 2023 Intel Corporation
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+syntax = "proto3";
+
+message GoModFile {
+     message ModuleDependency {
+      string module_name = 1;
+      float version = 2;
+     }
+     message ModuleReplacement {
+      string old_module = 1;
+      float old_version = 2;
+      string new_module = 3;
+      float new_version = 4;
+     }
+     message ModuleExclude {
+      string module_name = 1;
+      float version = 2;
+     }
+     string module_name = 1;
+     float go_version = 2;
+     repeated ModuleDependency require = 3;
+     repeated ModuleExclude exclude = 4;
+     repeated ModuleReplacement replace = 5;
+
+}
