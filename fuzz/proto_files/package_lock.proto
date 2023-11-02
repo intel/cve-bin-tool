@@ -1,0 +1,31 @@
+// Copyright (C) 2023 Intel Corporation
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+syntax = "proto3";
+
+message PackageLock{
+    string name = 1;
+    string version = 2;
+    uint32 lockfileVersion = 3;
+    bool requires = 4;
+    
+    message Package{
+        string name = 1;
+        string version = 2;
+        string integrity = 3;
+        string resolved = 4;
+        optional bool dev = 5;
+        optional bool optional = 6;
+
+        message Require{
+            string name = 1;
+            string version = 2;
+        }
+
+        repeated Require requires = 7;
+        
+        repeated Package dependencies = 8;
+    }
+
+    repeated Package dependencies = 5;
+}
