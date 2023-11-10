@@ -1,0 +1,17 @@
+// Copyright (C) 2023 Intel Corporation
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+syntax = "proto3";
+
+message PackageList{
+    message Package{
+        string name = 1;
+	repeated string extras = 2;
+        oneof constraint{
+            float version = 3;
+            string url = 4;
+        }
+    }
+
+    repeated Package packages = 1;
+}
