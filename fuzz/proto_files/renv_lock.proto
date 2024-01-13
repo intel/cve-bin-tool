@@ -1,0 +1,40 @@
+// Copyright (C) 2023 Intel Corporation
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+syntax = "proto3";
+
+// Main structure representing the renv.lock file
+message RenvLock {
+  RVersion r = 1;
+  BioconductorVersion bioconductor = 2;
+  repeated Package packages = 3;
+
+
+// R version details
+message RVersion {
+  string version = 1;
+  repeated Repository repositories = 2;
+}
+
+// Bioconductor version details
+message BioconductorVersion {
+  string version = 1;
+}
+
+// Repository information
+message Repository {
+  string name = 1;
+  string url = 2;
+}
+
+// Package details
+message Package {
+  string package = 1;
+  string version = 2;
+  string source = 3;
+  string repository = 4;
+  string hash = 5;
+  repeated string requirements = 6;
+}
+}
+ 
