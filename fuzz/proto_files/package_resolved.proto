@@ -1,0 +1,31 @@
+// Copyright (C) 2023 Intel Corporation
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+syntax = "proto3";
+
+package resolved;
+
+// Represents the state of a package, with optional branch, revision, and version.
+message PackageState {
+    string branch = 1;     // Branch name (optional, can be empty)
+    string revision = 2;   // Revision or commit hash
+    string version = 3;    // Version of the package
+}
+
+// Represents a single package pin.
+message PackagePin {
+    string package = 1;              // Name of the package
+    string repositoryURL = 2;        // URL of the package's repository
+    PackageState state = 3;          // State of the package
+}
+
+// Represents the top-level structure of the package.resolved file.
+message PackageResolved {
+    message Object {
+        repeated PackagePin pins = 1; // List of package pins
+    }
+
+    Object object = 1;  // Object containing the list of pins
+    int32 version = 2;  // Version of the package.resolved file
+}
+
