@@ -1,0 +1,22 @@
+// Copyright(C) 2023 Intel Corporation
+// SPDX-License-Identifier: GPL-3.0-or -later
+
+syntax = "proto3";
+
+// Represents the PKG-INFO file structure for a Python package
+message PkgInfo {
+    string metadata_version = 1;
+    string name = 2;
+    string version = 3;
+    string summary = 4;
+    string home_page = 5;
+    string author = 6;
+    string author_email = 7;
+    string license = 8;
+    repeated string keywords = 9;
+    repeated string classifiers = 10;
+    string requires_python = 11;
+    string license_file = 12;
+    repeated string requires_dist = 13;
+    repeated string provides_extra = 14;
+}
