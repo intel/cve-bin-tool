@@ -1,0 +1,41 @@
+// Copyright (C) 2023 Intel Corporation
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+syntax = "proto3";
+
+// Represents the state of a GIT package
+message GitPackage {
+    string remote = 1;
+    string revision = 2;
+    string branch = 3;
+    repeated Spec specs = 4;
+}
+
+// Represents the state of a PATH package
+message PathPackage {
+    string remote = 1;
+    repeated Spec specs = 2;
+}
+
+// Represents a spec in a package
+message Spec {
+    string name = 1;
+    string version = 2;
+    repeated string dependencies = 3;
+}
+
+// Represents the state of a GEM package
+message GemPackage {
+    string remote = 1;
+    repeated Spec specs = 2;
+}
+
+// Represents the entire Gemfile.lock file
+message GemfileLock {
+    repeated GitPackage git_packages = 1;
+    repeated PathPackage path_packages = 2;
+    repeated GemPackage gem_packages = 3;
+    repeated string platforms = 4;
+    repeated string dependencies = 5;
+    string bundled_with = 6;
+}
