@@ -1,0 +1,33 @@
+// Copyright (C) 2022 Intel Corporation
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+syntax = "proto3";
+
+package pubspec;
+
+// Represents a single package dependency.
+message Package {
+  string name = 1;                // Name of the package.
+  string version = 2;             // Version of the package.
+  string url = 3;                 // URL of the package repository.
+  DependencyType dependency = 4;  // Type of dependency (direct, transitive, etc.).
+}
+
+// Represents the dependency type of a package.
+enum DependencyType {
+  UNKNOWN = 0;       // Unknown dependency type.
+  DIRECT_MAIN = 1;   // Direct main dependency.
+  TRANSITIVE = 2;    // Transitive dependency.
+}
+
+// Represents the SDK constraints.
+message SdkConstraint {
+  string dart = 1;    // Dart SDK constraint.
+  string flutter = 2; // Flutter SDK constraint.
+}
+
+// Represents the entire pubspec.lock file structure.
+message PubspecLock {
+  repeated Package packages = 1;   // List of package dependencies.
+  SdkConstraint sdks = 2;          // SDK constraints.
+}
