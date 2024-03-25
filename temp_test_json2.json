@@ -1,0 +1,214 @@
+{
+  "$schema": "",
+  "metadata": {
+    "tool": {
+      "name": "cve-bin-tool",
+      "version": "3.3rc2"
+    },
+    "generation_date": "2024-03-25 20:27:35",
+    "parameter": {
+      "options": {
+        "help": null,
+        "exclude": [],
+        "version": null,
+        "disable-version-check": false,
+        "disable-validation-check": false,
+        "offline": false,
+        "detailed": false
+      },
+      "cve_data_download": {
+        "nvd": "json-mirror",
+        "update": "daily",
+        "nvd-api-key": "",
+        "disable-data-source": [],
+        "use-mirror": ""
+      },
+      "input": {
+        "directory": "test/language_data/pubspec.lock",
+        "input-file": "",
+        "triage-input-file": "",
+        "config": "",
+        "package-list": "",
+        "sbom": "",
+        "sbom-file": ""
+      },
+      "output": {
+        "quiet": false,
+        "log-level": "debug",
+        "output-file": "temp_test_json2",
+        "html-theme": "",
+        "format": "json2",
+        "generate-config": "",
+        "cvss": 0,
+        "severity": "low",
+        "metrics": false,
+        "epss-percentile": null,
+        "epss-probability": null,
+        "no-0-cve-report": false,
+        "available-fix": "",
+        "backport-fix": "",
+        "affected-versions": 0,
+        "vex": "",
+        "sbom-output": "",
+        "sbom-type": "spdx",
+        "sbom-format": "tag"
+      },
+      "merge_report": {
+        "append": false,
+        "tag": "",
+        "merge": null,
+        "filter": []
+      },
+      "checkers": {
+        "skips": "",
+        "runs": ""
+      },
+      "database_management": {
+        "import-json": "",
+        "ignore-sig": false,
+        "log-signature-error": false,
+        "verify": "",
+        "export-json": "",
+        "pgp-sign": "",
+        "passphrase": "",
+        "export": "",
+        "import": ""
+      },
+      "exploits": {
+        "exploits": false
+      },
+      "deprecated": {
+        "extract": true,
+        "report": false
+      }
+    }
+  },
+  "database_info": {
+    "last_updated": "2024-03-25 19:16:31",
+    "total_entries": {
+      "NVD": 242413,
+      "OSV": 94051,
+      "GAD": 18311,
+      "REDHAT": 16799
+    }
+  },
+  "vulnerabilities": {
+    "summary": {
+      "CRITICAL": 0,
+      "HIGH": 7,
+      "MEDIUM": 0,
+      "LOW": 0,
+      "UNKNOWN": 0
+    },
+    "report": [
+      {
+        "datasource": "OSV",
+        "entries": [
+          {
+            "vendor": "unknown",
+            "product": "archive",
+            "version": "3.3.7",
+            "cve_number": "CVE-2023-39137",
+            "severity": "HIGH",
+            "score": "7.8",
+            "source": "OSV",
+            "cvss_version": "3",
+            "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "paths": "test/language_data/pubspec.lock",
+            "remarks": "NewFound",
+            "comments": ""
+          },
+          {
+            "vendor": "archive_project",
+            "product": "archive",
+            "version": "3.3.7",
+            "cve_number": "CVE-2023-39137",
+            "severity": "HIGH",
+            "score": "7.8",
+            "source": "OSV",
+            "cvss_version": "3",
+            "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "paths": "test/language_data/pubspec.lock",
+            "remarks": "NewFound",
+            "comments": ""
+          },
+          {
+            "vendor": "unknown",
+            "product": "dio",
+            "version": "4.0.0",
+            "cve_number": "GHSA-jwpw-q68h-r678",
+            "severity": "HIGH",
+            "score": "7.5",
+            "source": "OSV",
+            "cvss_version": "3",
+            "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "paths": "test/language_data/pubspec.lock",
+            "remarks": "NewFound",
+            "comments": ""
+          }
+        ]
+      },
+      {
+        "datasource": "NVD",
+        "entries": [
+          {
+            "vendor": "unknown",
+            "product": "archive",
+            "version": "3.3.7",
+            "cve_number": "CVE-2023-39139",
+            "severity": "HIGH",
+            "score": "7.8",
+            "source": "NVD",
+            "cvss_version": "3",
+            "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "paths": "test/language_data/pubspec.lock",
+            "remarks": "NewFound",
+            "comments": ""
+          },
+          {
+            "vendor": "archive_project",
+            "product": "archive",
+            "version": "3.3.7",
+            "cve_number": "CVE-2023-39139",
+            "severity": "HIGH",
+            "score": "7.8",
+            "source": "NVD",
+            "cvss_version": "3",
+            "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+            "paths": "test/language_data/pubspec.lock",
+            "remarks": "NewFound",
+            "comments": ""
+          },
+          {
+            "vendor": "flutterchina",
+            "product": "dio",
+            "version": "4.0.0",
+            "cve_number": "CVE-2021-31402",
+            "severity": "HIGH",
+            "score": "7.5",
+            "source": "NVD",
+            "cvss_version": "3",
+            "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "paths": "test/language_data/pubspec.lock",
+            "remarks": "NewFound",
+            "comments": ""
+          },
+          {
+            "vendor": "unknown",
+            "product": "dio",
+            "version": "4.0.0",
+            "cve_number": "CVE-2021-31402",
+            "severity": "HIGH",
+            "score": "7.5",
+            "source": "NVD",
+            "cvss_version": "3",
+            "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+            "paths": "test/language_data/pubspec.lock",
+            "remarks": "NewFound",
+            "comments": ""
+          }
+        ]
+      }
+    ]
+  }
+}
