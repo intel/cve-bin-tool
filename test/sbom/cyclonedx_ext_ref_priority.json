@@ -1,0 +1,89 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:80c1b198-5175-4fda-86c8-1cc725b6c532",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-03-30T18:21:29Z",
+    "tools": {
+      "components": [
+        {
+          "name": "cve-bin-tool",
+          "version": "3.3rc2",
+          "type": "application"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "bom-ref": "CDXRef-DOCUMENT",
+      "name": "SBOM_CVEBINTOOL-product_1-0-0-66_all-deb"
+    }
+  },
+  "components": [
+    {
+      "type": "application",
+      "bom-ref": "1-CVEBINTOOL-product_1-0-0-66_all-deb",
+      "name": "CVEBINTOOL-product_1-0-0-66_all-deb"
+    },
+    {
+      "type": "library",
+      "bom-ref": "2-libjpeg",
+      "name": "libjpeg-3",
+      "version": "8b-3",
+      "supplier": {
+        "name": "ijg"
+      },
+      "cpe": "cpe:2.3:a:ijg:libjpeg:8b:*:*:*:*:*:*:*",
+      "purl": "pkg:deb/ijg-2/libjpeg-2@8b-2"
+    },
+    {
+      "type": "library",
+      "bom-ref": "3-libexpat",
+      "name": "libexpat-3",
+      "version": "2.0.1-3",
+      "supplier": {
+        "name": "libexpat project"
+      },
+      "cpe": "cpe:/a:libexpat_project:libexpat:2.0.1",
+      "purl": "pkg:deb/libexpat_project-3/libexpat-3@2.0.1-3"
+    },
+    {
+      "type": "library",
+      "bom-ref": "4-ncurses",
+      "name": "ncurses",
+      "version": "5.9-1",
+      "supplier": {
+        "name": "gnu"
+      },
+      "purl": "pkg:deb/gnu/ncurses@5.9"
+    },
+    {
+      "type": "library",
+      "bom-ref": "5-zlib",
+      "name": "zlib",
+      "version": "1.2.3",
+      "supplier": {
+        "name": "zlib"
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "CDXRef-DOCUMENT",
+      "dependsOn": [
+        "1-CVEBINTOOL-product_1-0-0-66_all-deb"
+      ]
+    },
+    {
+      "ref": "1-CVEBINTOOL-product_1-0-0-66_all-deb",
+      "dependsOn": [
+        "2-libjpeg",
+        "3-libexpat",
+        "4-ncurses",
+        "5-zlib"
+      ]
+    }
+  ]
+}
