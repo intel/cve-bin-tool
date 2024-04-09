@@ -1,0 +1,88 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:80c1b198-5175-4fda-86c8-1cc725b6c532",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-03-30T18:21:29Z",
+    "tools": {
+      "components": [
+        {
+          "name": "cve-bin-tool",
+          "version": "3.3rc2",
+          "type": "application"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "bom-ref": "CDXRef-DOCUMENT",
+      "name": "SBOM_CVEBINTOOL-product_1-0-0-66_all-deb"
+    }
+  },
+  "components": [
+    {
+      "type": "application",
+      "bom-ref": "1-CVEBINTOOL-product_1-0-0-66_all-deb",
+      "name": "CVEBINTOOL-product_1-0-0-66_all-deb"
+    },
+    {
+      "type": "library",
+      "bom-ref": "2-libjpeg",
+      "name": "libjpeg-novendor",
+      "version": "8b",
+      "supplier": {
+        "name": "ijg"
+      },
+      "purl": "pkg:deb//libjpeg@8b"
+    },
+    {
+      "type": "library",
+      "bom-ref": "3-libexpat",
+      "name": "libexpat",
+      "version": "2.0.1",
+      "supplier": {
+        "name": "libexpat project"
+      },
+      "purl": "pkg:deb/libexpat_project/@2.0.1"
+    },
+    {
+      "type": "library",
+      "bom-ref": "4-ncurses",
+      "name": "ncurses-noversion",
+      "version": "5.9.noversion",
+      "supplier": {
+        "name": "gnu"
+      },
+      "purl": "pkg:deb/gnu/ncurses@"
+    },
+    {
+      "type": "library",
+      "bom-ref": "5-zlib",
+      "name": "zlib",
+      "version": "1.2.3",
+      "supplier": {
+        "name": "zlib"
+      },
+      "cpe": "cpe:/a:zlib:zlib:1.2.3"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "CDXRef-DOCUMENT",
+      "dependsOn": [
+        "1-CVEBINTOOL-product_1-0-0-66_all-deb"
+      ]
+    },
+    {
+      "ref": "1-CVEBINTOOL-product_1-0-0-66_all-deb",
+      "dependsOn": [
+        "2-libjpeg",
+        "3-libexpat",
+        "4-ncurses",
+        "5-zlib"
+      ]
+    }
+  ]
+}
