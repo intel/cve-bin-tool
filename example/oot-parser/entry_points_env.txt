@@ -1,0 +1,2 @@
+[cve_bin_tool.parsers]
+env = cve_bin_tool_parser_env.env:EnvParser
