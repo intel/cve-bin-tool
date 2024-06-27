@@ -1,0 +1,2 @@
+[cve_bin_tool.parsers]
+static_analysis_bandit = cve_bin_tool_parser_static_analysis_bandit.static_analysis_bandit:BanditParser
