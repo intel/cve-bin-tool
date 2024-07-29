@@ -1,0 +1,33 @@
+// Copyright(C) 2023 Intel Corporation
+// SPDX-License-Identifier: GPL-3.0-or -later
+
+syntax = "proto3"
+
+message PomXmlProject{
+    string xml_namespace = 1
+    string xml_schema_instance = 2
+    string xml_namespace_uri1 = 3
+    string xml_namespace_uri2 = 4
+    float model_version = 5
+    string packaging = 6
+    string group_Id = 7
+    string artifactId = 8
+    string name = 10
+    string url = 11
+    float version = 12
+    repeated Dependency dependencies = 13
+    repeated Plugin plugins = 14
+
+}
+message Dependency {
+    string groupId = 1
+    string artifactId = 2
+    string version = 3
+    string scope = 4
+}
+
+message Plugin {
+    string groupId = 1
+    string artifactId = 2
+    float version = 3
+}

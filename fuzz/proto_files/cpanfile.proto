@@ -1,0 +1,28 @@
+// Copyright (C) 2022 Intel Corporation
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+syntax = "proto3";
+
+// Represents a single Perl module requirement.
+message ModuleRequirement {
+    string name = 1;     // The name of the module
+    string version = 2;  // The required version of the module
+}
+
+// Represents the entire CPAN file.
+message CPANFile {
+    repeated ModuleRequirement general_requirements = 1;  // General requirements
+
+    // Dependencies specific to the 'test' environment.
+    message TestDependencies {
+        repeated ModuleRequirement test_requirements = 1;  // Test requirements
+        repeated ModuleRequirement test_recommends = 2;    // Test recommendations
+    }
+    TestDependencies test_dependencies = 2;
+
+    // Dependencies specific to the 'develop' environment.
+    message DevelopDependencies {
+        repeated ModuleRequirement develop_requirements = 1;  // Develop requirements
+    }
+    DevelopDependencies develop_dependencies = 3;
+}

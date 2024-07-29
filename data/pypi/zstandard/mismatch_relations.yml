@@ -1,0 +1,4 @@
+purls:
+  - pkg:pypi/zstandard
+invalid_vendors:
+  - facebook

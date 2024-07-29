@@ -1,0 +1,67 @@
+// Copyright (C) 2022 Intel Corporation
+// SPDX-License-Identifier: GPL-3.0-or-later
+
+syntax = "proto3";
+
+// Represents a single package, either a regular package or a dev package.
+message Package {
+    string name = 1;
+    string version = 2;
+    Source source = 3;
+    Distribution dist = 4;
+    map<string, string> require = 5;
+    map<string, string> require_dev = 6;
+    repeated string bin = 7;
+    string type = 8;
+    map<string, string> autoload = 9;
+    string notification_url = 10;
+    repeated string license = 11;
+    repeated Author authors = 12;
+    string description = 13;
+    map<string, string> support = 14;
+    repeated Funding funding = 15;
+    string time = 16;
+}
+
+// Represents the source information of a package.
+message Source {
+    string type = 1;
+    string url = 2;
+    string reference = 3;
+}
+
+// Represents the distribution information of a package.
+message Distribution {
+    string type = 1;
+    string url = 2;
+    string reference = 3;
+    string shasum = 4;
+}
+
+// Represents an author of a package.
+message Author {
+    string name = 1;
+    string email = 2;
+    string role = 3;
+}
+
+// Represents funding information for a package.
+message Funding {
+    string url = 1;
+    string type = 2;
+}
+
+// Main message representing the entire composer.lock file.
+message ComposerLock {
+    string content_hash = 1;
+    repeated Package packages = 2;
+    repeated Package packages_dev = 3;
+    repeated string aliases = 4;
+    string minimum_stability = 5;
+    map<string, string> stability_flags = 6;
+    bool prefer_stable = 7;
+    bool prefer_lowest = 8;
+    map<string, string> platform = 9;
+    map<string, string> platform_dev = 10;
+    string plugin_api_version = 11;
+}
