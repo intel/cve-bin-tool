@@ -1,0 +1,87 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:614e1a9d-616f-4f18-88ee-069127a2c271",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-08-07T20:26:22Z",
+    "tools": {
+      "components": [
+        {
+          "name": "cve-bin-tool",
+          "version": "3.3.1dev0",
+          "type": "application"
+        }
+      ]
+    },
+    "component": {
+      "type": "application",
+      "bom-ref": "CDXRef-DOCUMENT",
+      "name": "SBOM_CVEBINTOOL-pubspec-lock"
+    }
+  },
+  "components": [
+    {
+      "type": "application",
+      "bom-ref": "1-CVEBINTOOL-pubspec-lock",
+      "name": "CVEBINTOOL-pubspec-lock",
+      "externalReferences": [
+        {
+          "url": "pubspec.lock",
+          "type": "distribution",
+          "comment": "Download location for component"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "bom-ref": "2-archive",
+      "name": "archive",
+      "version": "3.3.7",
+      "supplier": {
+        "name": "archive project"
+      },
+      "cpe": "cpe:/a:archive_project:archive:3.3.7",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "pubspec.lock"
+          }
+        ]
+      }
+    },
+    {
+      "type": "library",
+      "bom-ref": "3-dio",
+      "name": "dio",
+      "version": "4.0.0",
+      "supplier": {
+        "name": "flutterchina"
+      },
+      "cpe": "cpe:/a:flutterchina:dio:4.0.0",
+      "evidence": {
+        "occurrences": [
+          {
+            "location": "pubspec.lock"
+          }
+        ]
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "CDXRef-DOCUMENT",
+      "dependsOn": [
+        "1-CVEBINTOOL-pubspec-lock"
+      ]
+    },
+    {
+      "ref": "1-CVEBINTOOL-pubspec-lock",
+      "dependsOn": [
+        "2-archive",
+        "3-dio"
+      ]
+    }
+  ]
+}
