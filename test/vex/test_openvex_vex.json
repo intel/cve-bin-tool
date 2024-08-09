@@ -1,0 +1,71 @@
+{
+  "@context": "https://openvex.dev/ns/v0.2.0",
+  "@id": "https://openvex.dev/docs/public/vex-cfa9bc2b35954876b90f9a1487e8bf83",
+  "author": "dummy-vendor",
+  "role": "Document Creator",
+  "timestamp": "2024-07-05T21:20:34",
+  "version": "1",
+  "statements": [
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-1234-1004",
+        "name": "CVE-1234-1004"
+      },
+      "timestamp": "2024-07-05T21:20:34",
+      "products": [
+        {
+          "@id": "pkg:generic/vendor0/product0@1.0"
+        }
+      ],
+      "status": "under_investigation",
+      "action_statement": "",
+      "action_statement_timestamp": "2024-07-05T21:20:34"
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-1234-1005",
+        "name": "CVE-1234-1005"
+      },
+      "timestamp": "2024-07-05T21:20:34",
+      "products": [
+        {
+          "@id": "pkg:generic/vendor0/product0@1.0"
+        }
+      ],
+      "status": "not_affected",
+      "justification": null,
+      "action_statement": "Detail field populated.",
+      "action_statement_timestamp": "2024-07-05T21:20:34"
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-1234-1007",
+        "name": "CVE-1234-1007"
+      },
+      "timestamp": "2024-07-05T21:20:34",
+      "products": [
+        {
+          "@id": "pkg:generic/vendor0/product0@2.8.6"
+        }
+      ],
+      "status": "fixed",
+      "action_statement": "Data field populated.",
+      "action_statement_timestamp": "2024-07-05T21:20:34"
+    },
+    {
+      "vulnerability": {
+        "@id": "https://nvd.nist.gov/vuln/detail/CVE-1234-1008",
+        "name": "CVE-1234-1008"
+      },
+      "timestamp": "2024-07-05T21:20:34",
+      "products": [
+        {
+          "@id": "pkg:generic/vendor0/product0@2.8.6"
+        }
+      ],
+      "status": "under_investigation",
+      "action_statement": "",
+      "action_statement_timestamp": "2024-07-05T21:20:34"
+    }
+  ]
+}

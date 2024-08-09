@@ -1,0 +1,92 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.6.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:b54e9152-1a62-464d-be3f-c0149f07bf51",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2024-08-07T20:41:52Z",
+    "tools": {
+      "components": [
+        {
+          "name": "lib4vex",
+          "version": "0.1.0",
+          "type": "application"
+        }
+      ]
+    },
+    "properties": [
+      {
+        "name": "Revision_1",
+        "value": "Initial version"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "CDXRef-DOCUMENT",
+      "name": "myapp"
+    }
+  },
+  "vulnerabilities": [
+    {
+      "bom-ref": "archive@3.3.7",
+      "id": "CVE-2023-39137",
+      "source": {
+        "name": "NVD",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-39137"
+      },
+      "description": "An issue in Archive v3.3.7 allows attackers to spoof zip filenames which can lead to inconsistent filename parsing.",
+      "published": "2024-08-07T20:41:52Z",
+      "updated": "2024-08-07T20:41:52Z",
+      "analysis": {
+        "state": "not_affected",
+        "detail": ""
+      },
+      "affects": [
+        {
+          "ref": "urn:cbt:1/archive_project#archive:3.3.7"
+        }
+      ]
+    },
+    {
+      "bom-ref": "archive@3.3.7",
+      "id": "CVE-2023-39139",
+      "source": {
+        "name": "NVD",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-39139"
+      },
+      "description": "An issue in Archive v3.3.7 allows attackers to execute a path traversal via extracting a crafted zip file.",
+      "published": "2024-08-07T20:41:52Z",
+      "updated": "2024-08-07T20:41:52Z",
+      "analysis": {
+        "state": "in_triage",
+        "detail": ""
+      },
+      "affects": [
+        {
+          "ref": "urn:cbt:1/archive_project#archive:3.3.7"
+        }
+      ]
+    },
+    {
+      "bom-ref": "dio@4.0.0",
+      "id": "CVE-2021-31402",
+      "source": {
+        "name": "NVD",
+        "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-31402"
+      },
+      "description": "The dio package 4.0.0 for Dart allows CRLF injection if the attacker controls the HTTP method string, a different vulnerability than CVE-2020-35669.",
+      "published": "2024-08-07T20:41:52Z",
+      "updated": "2024-08-07T20:41:52Z",
+      "analysis": {
+        "state": "in_triage",
+        "detail": ""
+      },
+      "affects": [
+        {
+          "ref": "urn:cbt:1/flutterchina#dio:4.0.0"
+        }
+      ]
+    }
+  ]
+}
