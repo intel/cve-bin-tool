@@ -1,0 +1,32 @@
+
+      <p>This program is free software; you can redistribute it freely.
+        <br />
+
+Use it at your own risk; there is NO WARRANTY.
+      </p>
+
+      <p>Redistribution of modified versions is permitted provided that the following conditions are met:</p>
+
+<ul style="list-style:none">
+        
+<li>
+            <var class="replaceable-license-text"> 1.</var>
+          All copyright &amp; permission notices are preserved.
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 2.a)</var>
+          Only changes required for packaging or porting are made.<br />
+
+   or
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 2.b)</var>
+          It is clearly stated who last changed the program. The program is renamed or the version
+             number is of the form x.y.z, where x.y is the version of the original program and z is an
+             arbitrary suffix.
+        </li>
+      
+</ul>
+    

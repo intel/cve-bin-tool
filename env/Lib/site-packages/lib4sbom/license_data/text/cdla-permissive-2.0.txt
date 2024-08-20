@@ -1,0 +1,106 @@
+
+            <div class="optional-license-text"> 
+                <p>Community Data License Agreement - Permissive - Version 2.0</p>
+
+            </div>
+
+            <p>This is the Community Data License Agreement - Permissive, Version 2.0 (the &quot;agreement&quot;). Data Provider(s) and Data Recipient(s) agree as follows:</p>
+
+<ul style="list-style:none">
+                
+<li>
+                    <var class="replaceable-license-text"> 1.</var>
+                    Provision of the Data
+                    
+<ul style="list-style:none">
+                        
+<li>
+                            <var class="replaceable-license-text"> 1.1.</var>
+                            A Data Recipient may use, modify, and share the Data made available by Data Provider(s) under this agreement if that Data Recipient follows the terms of this agreement.
+                        </li>
+                        
+<li>
+                            <var class="replaceable-license-text"> 1.2.</var>
+                            This agreement does not impose any restriction on a Data Recipient&apos;s use, modification, or sharing of any portions of the Data that are in the public domain or that may be used, modified, or shared under any other legal exception or limitation.
+                        </li>
+                    
+</ul>
+                </li>
+                
+<li>
+                    <var class="replaceable-license-text"> 2.</var>
+                    Conditions for Sharing Data
+                    
+<ul style="list-style:none">
+                        
+<li>
+                            <var class="replaceable-license-text"> 2.1.</var>
+                            A Data Recipient may share Data, with or without modifications, so long as the Data Recipient makes available the text of this agreement with the shared Data.
+                        </li>
+                    
+</ul>
+                </li>
+                
+<li>
+                    <var class="replaceable-license-text"> 3.</var>
+                    No Restrictions on Results
+                    
+<ul style="list-style:none">
+                        
+<li>
+                            <var class="replaceable-license-text"> 3.1.</var>
+                            This agreement does not impose any restriction or obligations with respect to the use, modification, or sharing of Results.
+                        </li>
+                    
+</ul>
+                </li>
+                
+<li>
+                    <var class="replaceable-license-text"> 4.</var>
+                    No Warranty; Limitation of Liability
+                    
+<ul style="list-style:none">
+                        
+<li>
+                            <var class="replaceable-license-text"> 4.1.</var>
+                            All Data Recipients receive the Data subject to the following terms:
+                            <p>THE DATA IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT REPRESENTATIONS, WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.</p>
+
+                            <p>NO DATA PROVIDER SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE DATA OR RESULTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+
+                        </li>
+                    
+</ul>
+                </li>
+                
+<li>
+                    <var class="replaceable-license-text"> 5.</var>
+                    Definitions
+                    
+<ul style="list-style:none">
+                        
+<li>
+                            <var class="replaceable-license-text"> 5.1.</var>
+                            &quot;Data&quot; means the material received by a Data Recipient under this agreement.
+                        </li>
+                        
+<li>
+                            <var class="replaceable-license-text"> 5.2.</var>
+                            &quot;Data Provider&quot; means any person who is the source of Data provided under this agreement and in reliance on a Data Recipient&apos;s agreement to its terms.
+                        </li>
+                        
+<li>
+                            <var class="replaceable-license-text"> 5.3.</var>
+                            &quot;Data Recipient&quot; means any person who receives Data directly or indirectly from a Data Provider and agrees to the terms of this agreement.
+                        </li>
+                        
+<li>
+                            <var class="replaceable-license-text"> 5.4.</var>
+                            &quot;Results&quot; means any outcome obtained by computational analysis of Data, including for example machine learning models and models&apos; insights.
+                        </li>
+                    
+</ul>
+                </li>
+            
+</ul>
+        

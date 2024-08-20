@@ -1,0 +1,22 @@
+
+      <div class="optional-license-text"> 
+         <p><var class="replaceable-license-text"> ISC License</var></p>
+
+      </div>
+      <div class="replaceable-license-text"> 
+         <p>&lt;copyright notice&gt;</p>
+
+      </div>
+
+      <p>Permission to use, copy, modify, and<var class="optional-license-text"> /or</var> distribute this software for any purpose with or without fee is
+         hereby granted, provided that the above copyright notice and this permission notice appear in all
+         copies.</p>
+
+      <p>THE SOFTWARE IS PROVIDED &quot;AS IS&quot; AND <var class="replaceable-license-text"> THE AUTHOR</var> DISCLAIMS ALL
+         WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND
+         FITNESS. IN NO EVENT SHALL <var class="replaceable-license-text"> THE AUTHOR</var> BE LIABLE FOR ANY
+         SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF
+         USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING
+         OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</p>
+
+    

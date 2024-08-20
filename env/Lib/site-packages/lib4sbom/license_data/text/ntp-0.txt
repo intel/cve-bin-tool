@@ -1,0 +1,20 @@
+
+      <div class="optional-license-text"> 
+         <p>NTP No Attribution (NTP-0)</p>
+
+      </div>
+      <div class="replaceable-license-text"> 
+         <p>Copyright (4-digit-year) by (CopyrightHoldersName)
+         </p>
+
+      </div>
+
+      <p>Permission to use, copy, modify, and distribute this software and its documentation for any purpose
+         is hereby granted, provided that the name<var class="optional-license-text">s</var> of
+        <var class="replaceable-license-text"> (TrademarkedName)</var> not be used in advertising or publicity pertaining
+        to distribution of the software without specific, written prior permission.
+        <var class="replaceable-license-text"> (TrademarkedName)</var> make<var class="optional-license-text">s</var> no representations about the suitability
+        of this software for any purpose. It is provided &quot;as is&quot; without express or implied warranty.
+      </p>
+
+    

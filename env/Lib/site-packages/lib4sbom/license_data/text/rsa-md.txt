@@ -1,0 +1,25 @@
+
+      <div class="replaceable-license-text"> 
+         <p>Copyright (C) 1991-2, RSA Data Security, Inc. Created 1991. All rights reserved.</p>
+
+      </div>
+
+      <p>License to copy and use this software is granted provided that it is identified as the &quot;RSA Data
+         Security, Inc.
+        <var class="replaceable-license-text"> MD5</var> Message-Digest Algorithm&quot; in all material mentioning
+        or referencing this software or this function.
+      </p>
+
+      <p>License is also granted to make and use derivative works provided that such works are identified as
+         &quot;derived from the RSA Data Security, Inc.
+        <var class="replaceable-license-text"> MD5</var> Message-Digest Algorithm&quot; in all material mentioning
+        or referencing the derived work.
+      </p>
+
+      <p>RSA Data Security, Inc. makes no representations concerning either the merchantability of this software
+         or the suitability of this software for any particular purpose. It is provided &quot;as is&quot; without express
+         or implied warranty of any kind.</p>
+
+      <p>These notices must be retained in any copies of any part of this documentation and/or software.</p>
+
+    

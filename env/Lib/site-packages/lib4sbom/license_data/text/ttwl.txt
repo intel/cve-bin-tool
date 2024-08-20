@@ -1,0 +1,19 @@
+
+         <div class="replaceable-license-text"> 
+            <p>
+               Copyright (C) 1996-2002,2005,2006 David Muir Sharnoff.<br />
+
+               Copyright (C) 2005 Aristotle Pagaltzis<br />
+
+               Copyright (C) 2012-2013 Google, Inc.
+            </p>
+
+         </div>
+         <p>
+            This module may be modified, used, copied, and redistributed at your
+            own risk. Although allowed by the preceding license, please do not
+            publicly redistribute modified versions of this code with the name
+            &quot;Text::Tabs&quot; unless it passes the unmodified Text::Tabs test suite.
+         </p>
+
+      

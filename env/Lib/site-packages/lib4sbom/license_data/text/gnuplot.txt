@@ -1,0 +1,47 @@
+
+      <div class="replaceable-license-text"> 
+         <p>Copyright 1986 - 1993, 1998, 2004 Thomas Williams, Colin Kelley</p>
+
+      </div>
+
+      <p>Permission to use, copy, and distribute this software and its documentation for any purpose with or
+         without fee is hereby granted, provided that the above copyright notice appear in all copies and that
+         both that copyright notice and this permission notice appear in supporting documentation.</p>
+
+      <p>Permission to modify the software is granted, but not the right to distribute the complete modified
+         source code. Modifications are to be distributed as patches to the released version. Permission to
+         distribute binaries produced by compiling modified sources is granted, provided you</p>
+
+<ul style="list-style:none">
+        
+<li>
+            <var class="replaceable-license-text"> 1.</var>
+          distribute the corresponding source modifications from the released version in the form of a
+             patch file along with the binaries,
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 2.</var>
+          add special version identification to distinguish your version in addition to the base
+             release version number,
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 3.</var>
+          provide your name and address as the primary contact for the support of your modified version, and
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 4.</var>
+          retain our contact information in regard to use of the base software.
+        </li>
+      
+</ul>
+      <p>Permission to distribute the released version of the source code along with corresponding source
+         modifications in the form of a patch file is granted with same provisions 2 through 4 for binary
+         distributions.</p>
+
+      <p>This software is provided &quot;as is&quot; without express or implied warranty to the extent permitted
+         by applicable law.</p>
+
+    

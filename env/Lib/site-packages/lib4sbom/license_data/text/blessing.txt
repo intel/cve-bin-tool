@@ -1,0 +1,16 @@
+
+        <p>The author disclaims copyright to this source code. In place of a legal notice, here is a blessing:</p>
+
+<ul style="list-style:none">
+            
+<li><p>May you do good and not evil.</p>
+</li>
+            
+<li><p>May you find forgiveness for yourself and forgive others.</p>
+</li>
+            
+<li><p>May you share freely, never taking more than you give.</p>
+</li>
+        
+</ul>
+    

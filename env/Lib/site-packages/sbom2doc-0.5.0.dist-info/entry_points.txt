@@ -1,0 +1,2 @@
+[console_scripts]
+sbom2doc = sbom2doc.cli:main

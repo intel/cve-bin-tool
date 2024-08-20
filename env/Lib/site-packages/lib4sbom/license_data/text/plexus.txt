@@ -1,0 +1,68 @@
+
+      <div class="replaceable-license-text"> 
+         <p>Copyright 2002 (C) The Codehaus. All Rights Reserved. 
+      </p>
+
+      </div>
+
+      <p>Redistribution and use of this software and associated documentation (&quot;Software&quot;), with or without
+         modification, are permitted provided that the following conditions are met:</p>
+
+<ul style="list-style:none">
+        
+<li>
+            <var class="replaceable-license-text"> 1.</var>
+          Redistributions of source code must retain copyright statements and notices. Redistributions must
+             also contain a copy of this document.
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 2.</var>
+          Redistributions in binary form must reproduce the above copyright notice, this list of conditions
+             and the following disclaimer in the documentation and/or other materials provided with the
+             distribution.
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 3.</var>
+          The name
+            <var class="replaceable-license-text"> &quot;classworlds&quot;</var> must not be used to endorse or promote
+            products derived from this Software without prior written permission of
+            <var class="replaceable-license-text"> The Codehaus</var>. For written permission, please contact
+            <var class="replaceable-license-text"> bob@codehaus.org</var>.
+
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 4.</var>
+          Products derived from this Software may not be called
+            <var class="replaceable-license-text"> &quot;classworlds&quot;</var> nor may
+            <var class="replaceable-license-text"> &quot;classworlds&quot;</var> appear in their names without prior
+            written permission of
+            <var class="replaceable-license-text"> The Codehaus</var>.
+            <var class="replaceable-license-text"> &quot;classworlds&quot;</var> is a registered trademark of
+            <var class="replaceable-license-text"> The Codehaus</var>.
+
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 5.</var>
+          Due credit should be given to
+            <var class="replaceable-license-text"> The Codehaus. (http://classworlds.codehaus.org/)</var>.
+
+        </li>
+      
+</ul>
+      <p>THIS SOFTWARE IS PROVIDED BY
+        <var class="replaceable-license-text"> THE CODEHAUS</var> AND CONTRIBUTORS ``AS IS&apos;&apos; AND ANY EXPRESSED OR
+        IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+        FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+        <var class="replaceable-license-text"> THE CODEHAUS</var> OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+        INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+        PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+        HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+        NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+        POSSIBILITY OF SUCH DAMAGE.
+      </p>
+
+    

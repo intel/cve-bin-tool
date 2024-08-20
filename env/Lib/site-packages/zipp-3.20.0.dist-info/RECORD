@@ -1,0 +1,17 @@
+zipp-3.20.0.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+zipp-3.20.0.dist-info/LICENSE,sha256=htoPAa6uRjSKPD1GUZXcHOzN55956HdppkuNoEsqR0E,1023
+zipp-3.20.0.dist-info/METADATA,sha256=EEC0WqgdmfGCn9G22iKxIVQS6jAwz5wYM_gW-BtjkfE,3604
+zipp-3.20.0.dist-info/RECORD,,
+zipp-3.20.0.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zipp-3.20.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+zipp-3.20.0.dist-info/top_level.txt,sha256=iAbdoSHfaGqBfVb2XuR9JqSQHCoOsOtG6y9C_LSpqFw,5
+zipp/__init__.py,sha256=n7ywuDRSnxCeVYm39f-Nqi1XLK0olTaGu9J5X4ZkAcY,13364
+zipp/__pycache__/__init__.cpython-311.pyc,,
+zipp/__pycache__/glob.cpython-311.pyc,,
+zipp/compat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zipp/compat/__pycache__/__init__.cpython-311.pyc,,
+zipp/compat/__pycache__/overlay.cpython-311.pyc,,
+zipp/compat/__pycache__/py310.cpython-311.pyc,,
+zipp/compat/overlay.py,sha256=gW9DLKFbxANJrq2nypXq3uP6Owk4cPWUbu4gLxVBqU0,283
+zipp/compat/py310.py,sha256=eZpkW0zRtunkhEh8jjX3gCGe22emoKCBJw72Zt4RkhA,219
+zipp/glob.py,sha256=yPjGfHwcJxUn0fld7I-K-ZQSfTaJBBoimCIygU1SZQw,3315

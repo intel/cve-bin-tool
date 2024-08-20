@@ -1,0 +1,117 @@
+
+      <div class="optional-license-text"> 
+         <p>Simple Public License (SimPL)</p>
+
+      </div>
+      <div class="optional-license-text"> 
+         <p>Preamble</p>
+
+         <p>This Simple Public License 2.0 (SimPL 2.0 for short) is a plain language implementation of GPL 2.0. The
+         words are different, but the goal is the same - to guarantee for all users the freedom to share and
+         change software. If anyone wonders about the meaning of the SimPL, they should interpret it as
+         consistent with GPL 2.0.</p>
+
+      </div>
+      <div class="optional-license-text"> 
+         <p>Simple Public License (SimPL) 2.0</p>
+
+      </div>
+
+      <p>The SimPL applies to the software&apos;s source and object code and comes with any rights that I have in it
+         (other than trademarks). You agree to the SimPL by copying, distributing, or making a derivative work
+         of the software.</p>
+
+      <p>You get the royalty free right to:</p>
+
+<ul style="list-style:none">
+        
+<li>
+            <var class="replaceable-license-text"> -</var>
+          Use the software for any purpose;
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> -</var>
+          Make derivative works of it (this is called a &quot;Derived Work&quot;);
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> -</var>
+          Copy and distribute it and any Derived Work.
+        </li>
+      
+</ul>
+      <p>If you distribute the software or a Derived Work, you must give back to the community by:</p>
+
+<ul style="list-style:none">
+        
+<li>
+            <var class="replaceable-license-text"> -</var>
+          Prominently noting the date of any changes you make;
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> -</var>
+          Leaving other people&apos;s copyright notices, warranty disclaimers, and license terms in place;
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> -</var>
+          Providing the source code, build scripts, installation scripts, and interface definitions in a
+             form that is easy to get and best to modify;
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> -</var>
+          Licensing it to everyone under SimPL, or substantially similar terms (such as GPL 2.0), without
+             adding further restrictions to the rights provided;
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> -</var>
+          Conspicuously announcing that it is available under that license.
+        </li>
+      
+</ul>
+      <p>There are some things that you must shoulder:</p>
+
+<ul style="list-style:none">
+        
+<li>
+            <var class="replaceable-license-text"> -</var>
+          You get NO WARRANTIES. None of any kind;
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> -</var>
+          If the software damages you in any way, you may only recover direct damages up to the amount you
+             paid for it (that is zero if you did not pay anything). You may not recover any other damages,
+             including those called &quot;consequential damages.&quot; (The state or country where you live may not
+             allow you to limit your liability in this way, so this may not apply to you);
+        </li>
+      
+</ul>
+      <p>The SimPL continues perpetually, except that your license rights end automatically if:</p>
+
+<ul style="list-style:none">
+        
+<li>
+            <var class="replaceable-license-text"> -</var>
+          You do not abide by the &quot;give back to the community&quot; terms (your licensees get to keep their
+             rights if they abide);
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> -</var>
+          Anyone prevents you from distributing the software under the terms of the SimPL.
+        </li>
+      
+</ul>
+      <p>License for the License</p>
+
+      <p>You may do anything that you want with the SimPL text; it&apos;s a license form to use in any way that you
+         find helpful. To avoid confusion, however, if you change the terms in any way then you may not call
+         your license the Simple Public License or the SimPL (but feel free to acknowledge that your license is
+         &quot;based on the Simple Public License&quot;).</p>
+
+    
