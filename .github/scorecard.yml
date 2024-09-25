@@ -1,0 +1,5 @@
+annotations:
+  - checks:
+      - binary-artifacts
+    reasons:
+      - reason: test-data # binary files for testing binary scanner. Most are text signatures with no code.
