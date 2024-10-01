@@ -33,7 +33,7 @@ repos:
       exclude: ^fuzz/generated/|bandit\.conf$
 
 -   repo: https://github.com/PyCQA/bandit
-    rev: 1.7.9
+    rev: 1.7.10
     hooks:
     - id: bandit
       exclude: ^fuzz/generated/

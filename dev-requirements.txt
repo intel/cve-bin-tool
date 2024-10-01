@@ -5,7 +5,7 @@ pre-commit; python_version <= "3.8"
 pre-commit==3.8.0; python_version > "3.8"
 flake8; python_version < "3.8"
 flake8==7.1.1; python_version >= "3.8"
-bandit==1.7.9
+bandit==1.7.10
 gitlint==v0.19.1
 interrogate
 mypy==v1.11.2
