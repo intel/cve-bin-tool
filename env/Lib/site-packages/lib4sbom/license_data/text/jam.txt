@@ -1,0 +1,17 @@
+
+        <div class="replaceable-license-text"> 
+	    <p>Copyright 1993-2014 Christopher Seiwald and Perforce Software, Inc.</p>
+
+        </div>
+
+	<p>
+            License is hereby granted to use this software and distribute it
+            freely, as long as this copyright notice is retained and modifications
+            are clearly marked.
+	</p>
+
+	<p>
+            ALL WARRANTIES ARE HEREBY DISCLAIMED.
+	</p>
+
+    

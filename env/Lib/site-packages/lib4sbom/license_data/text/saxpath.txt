@@ -1,0 +1,66 @@
+
+      <div class="replaceable-license-text"> 
+         <p>Copyright (C) 2000-2002 werken digital.
+        <br />
+
+All rights reserved.
+      </p>
+
+      </div>
+
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided
+         that the following conditions are met:</p>
+
+<ul style="list-style:none">
+        
+<li>
+            <var class="replaceable-license-text"> 1.</var>
+          Redistributions of source code must retain the above copyright notice, this list of conditions,
+             and the following disclaimer.
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 2.</var>
+          Redistributions in binary form must reproduce the above copyright notice, this list of
+             conditions, and the disclaimer that follows these conditions in the documentation and/or other
+             materials provided with the distribution.
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 3.</var>
+           The name <var class="replaceable-license-text"> &quot;SAXPath&quot;</var> must not be used 
+           to endorse or promote products derived from this software
+             without prior written permission. For written permission, please contact
+           <var class="replaceable-license-text"> license@saxpath.org</var>.
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 4.</var>
+          Products derived from this software may not be called <var class="replaceable-license-text"> &quot;SAXPath&quot;</var>, 
+          nor may <var class="replaceable-license-text"> &quot;SAXPath&quot;</var> appear in
+             their name, without prior written permission from the <var class="replaceable-license-text"> SAXPath Project Management
+           (pm@saxpath.org)</var>.
+        </li>
+      
+</ul>
+      <p>In addition, we request (but do not require) that you include in the end-user documentation provided with
+         the redistribution and/or in the software itself an acknowledgement equivalent to the following:
+        <br />
+
+&quot;This product includes software developed by 
+        <var class="replaceable-license-text"> the SAXPath Project (http://www.saxpath.org/)</var>.&quot;
+      </p>
+
+      <p>Alternatively, the acknowledgment may be graphical using the logos available at 
+      <var class="replaceable-license-text"> http://www.saxpath.org/</var></p>
+
+      <p>THIS SOFTWARE IS PROVIDED ``AS IS&apos;&apos; AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED
+         TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN
+         NO EVENT SHALL THE SAXPath AUTHORS OR THE PROJECT CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+         INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+         OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+         CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+         NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+         POSSIBILITY OF SUCH DAMAGE.</p>
+
+    

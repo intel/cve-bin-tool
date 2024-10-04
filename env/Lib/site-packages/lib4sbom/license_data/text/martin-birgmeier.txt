@@ -1,0 +1,17 @@
+
+         <var class="replaceable-license-text"> 
+            Copyright (c) 1993 Martin Birgmeier All rights reserved.
+         </var>
+         <p>
+            You may redistribute unmodified or modified versions of
+            this source code provided that the above copyright notice
+            and this and the following conditions are retained.
+         </p>
+
+         <p>
+            This software is provided ``as is&apos;&apos;, and comes with no warranties
+            of any kind. I shall in no event be liable for anything
+            that happens to anyone/anything when using this software.
+         </p>
+
+      

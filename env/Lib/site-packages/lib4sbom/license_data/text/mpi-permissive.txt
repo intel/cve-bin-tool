@@ -1,0 +1,20 @@
+
+      <div class="replaceable-license-text"> 
+         <p>Copyright (C) 2000-2004 by Etnus, LLC</p>
+
+      </div>
+
+  Permission is hereby granted to use, reproduce, prepare derivative
+  works, and to redistribute to others.
+
+				  DISCLAIMER
+
+  Neither <var class="replaceable-license-text"> Etnus</var>, nor any of their employees, makes any warranty
+  express or implied, or assumes any legal liability or
+  responsibility for the accuracy, completeness, or usefulness of any
+  information, apparatus, product, or process disclosed, or
+  represents that its use would not infringe privately owned rights.
+
+  This code was written by
+  <var class="replaceable-license-text"> James Cownie: Etnus, LLC. &lt;jcownie@etnus.com&gt;</var>
+    

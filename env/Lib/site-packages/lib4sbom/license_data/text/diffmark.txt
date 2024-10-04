@@ -1,0 +1,16 @@
+
+      
+<ul style="list-style:none">
+        
+<li>
+            <var class="replaceable-license-text"> 1.</var>
+          you can do what you want with it
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 2.</var>
+          I refuse any responsibility for the consequences
+        </li>
+      
+</ul>
+    

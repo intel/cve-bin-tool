@@ -1,0 +1,42 @@
+
+      <div class="optional-license-text"> 
+         <p>Eiffel Forum License, version 2</p>
+
+      </div>
+
+<ul style="list-style:none">
+        
+<li>
+            <var class="replaceable-license-text"> 1.</var>
+          Permission is hereby granted to use, copy, modify and/or distribute this package, provided that:
+          
+<ul style="list-style:none">
+               
+<li>
+                  <var class="replaceable-license-text"> -</var>
+              copyright notices are retained unchanged,
+            </li>
+               
+<li>
+                  <var class="replaceable-license-text"> -</var>
+              any distribution of this package, whether modified or not, includes this license text.
+            </li>
+            
+</ul>
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 2.</var>
+          Permission is hereby also granted to distribute binary programs which depend on this package. If
+             the binary program depends on a modified version of this package, you are encouraged to
+             publicly release the modified version of this package.
+        </li>
+      
+</ul>
+      <p>THIS PACKAGE IS PROVIDED &quot;AS IS&quot; AND WITHOUT WARRANTY. ANY EXPRESS OR IMPLIED WARRANTIES,
+         INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+         PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS BE LIABLE TO ANY PARTY FOR ANY DIRECT, INDIRECT,
+         INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS
+         PACKAGE.</p>
+
+    

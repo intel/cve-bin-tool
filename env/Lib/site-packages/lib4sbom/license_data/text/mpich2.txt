@@ -1,0 +1,46 @@
+
+      <div class="replaceable-license-text"> 
+         <p>COPYRIGHT</p>
+
+      </div>
+
+      <p>The following is a notice of limited availability of the code, and disclaimer which must be included in
+	      the prologue of the code and in all source listings of the code.</p>
+
+      <div class="replaceable-license-text"> 
+	      <p>Copyright Notice</p>
+
+	      <p>1998--2020, Argonne National Laboratory</p>
+
+      </div>
+      <p>Permission is hereby granted to use, reproduce, prepare derivative works, and to redistribute to others.
+         This software was authored by:</p>
+
+      <div class="replaceable-license-text"> 
+	 <p>Mathematics and Computer Science Division</p>
+
+	 <p>Argonne National Laboratory, Argonne IL 60439</p>
+
+	 <p>(and)</p>
+
+	 <p>Department of Computer Science</p>
+
+	 <p>University of Illinois at Urbana-Champaign</p>
+
+      </div>
+      <p>GOVERNMENT LICENSE</p>
+
+      <p>Portions of this material resulted from work developed under a U.S. Government Contract and are subject
+         to the following license: the Government is granted for itself and others acting on its behalf a
+         paid-up, nonexclusive, irrevocable worldwide license in this computer software to reproduce, prepare
+         derivative works, and perform publicly and display publicly.</p>
+
+      <p>DISCLAIMER</p>
+
+      <p>This computer code material was prepared, in part, as an account of work sponsored by an agency of the
+         United States Government. Neither the United States, nor the University of Chicago, nor any of their
+         employees, makes any warranty express or implied, or assumes any legal liability or responsibility for
+         the accuracy, completeness, or usefulness of any information, apparatus, product, or process
+         disclosed, or represents that its use would not infringe privately owned rights.</p>
+
+    

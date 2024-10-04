@@ -1,0 +1,99 @@
+
+    <div class="optional-license-text"> 
+       <p>Open Use of Data Agreement v1.0</p>
+
+    </div>
+
+    <p>This is the Open Use of Data Agreement, Version 1.0 (the &quot;O-UDA&quot;). Capitalized terms are defined in Section 5. Data Provider and you agree as follows:</p>
+
+<ul style="list-style:none">
+        
+<li>
+            <var class="replaceable-license-text"> 1.</var> Provision of the Data
+
+<ul style="list-style:none">
+                
+<li><var class="replaceable-license-text"> 1.1.</var> You may use, modify, and distribute the Data made available to you by the Data Provider under this O-UDA if you follow the O-UDA&apos;s terms.</li>
+
+<li><var class="replaceable-license-text"> 1.2.</var> Data Provider will not sue you or any Downstream Recipient for any claim arising out of the use, modification, or distribution of the Data provided you meet the terms of the O-UDA.</li>
+
+<li><var class="replaceable-license-text"> 1.3.</var> This O-UDA does not restrict your use, modification, or distribution of any portions of the Data that are in the public domain or that may be used, modified, or distributed under any other legal exception or limitation.</li>
+            
+</ul>
+        </li>
+
+<li>
+            <var class="replaceable-license-text"> 2.</var> No Restrictions on Use or Results
+
+<ul style="list-style:none">
+                
+<li>
+                    <var class="replaceable-license-text"> 2.1.</var> The O-UDA does not impose any restriction with respect to:
+
+<ul style="list-style:none">
+                        
+<li><var class="replaceable-license-text"> 2.1.1.</var> the use or modification of Data; or</li>
+
+<li><var class="replaceable-license-text"> 2.1.2.</var> the use, modification, or distribution of Results.</li>
+                    
+</ul>
+                </li>
+            
+</ul>
+        </li>
+
+<li>
+            <var class="replaceable-license-text"> 3.</var> Redistribution of Data
+
+<ul style="list-style:none">
+                
+<li>
+                    <var class="replaceable-license-text"> 3.1.</var> You may redistribute the Data under terms of your choice, so long as:
+
+<ul style="list-style:none">
+                        
+<li><var class="replaceable-license-text"> 3.1.1.</var> You include with any Data you redistribute all credit or attribution information that you received with the Data, and your terms require any Downstream Recipient to do the same; and</li>
+
+<li><var class="replaceable-license-text"> 3.1.2.</var> Your terms include a warranty disclaimer and limitation of liability for Upstream Data Providers at least as broad as those contained in Section 4.2 and 4.3 of the O-UDA.</li>
+                    
+</ul>
+                </li>
+            
+</ul>
+        </li>
+
+<li>
+            <var class="replaceable-license-text"> 4.</var> No Warranty, Limitation of Liability
+
+<ul style="list-style:none">
+                
+<li><var class="replaceable-license-text"> 4.1.</var> Data Provider does not represent or warrant that it has any rights whatsoever in the Data.</li>
+
+<li><var class="replaceable-license-text"> 4.2.</var> THE DATA IS PROVIDED ON AN &quot;AS IS&quot; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.</li>
+
+<li><var class="replaceable-license-text"> 4.3.</var> NEITHER DATA PROVIDER NOR ANY UPSTREAM DATA PROVIDER SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE DATA OR RESULTS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</li>
+            
+</ul>
+        </li>
+
+<li>
+            <var class="replaceable-license-text"> 5.</var> Definitions
+
+<ul style="list-style:none">
+                
+<li><var class="replaceable-license-text"> 5.1.</var> &quot;Data&quot; means the material you receive under the O-UDA in modified or unmodified form, but not including Results.</li>
+
+<li><var class="replaceable-license-text"> 5.2.</var> &quot;Data Provider&quot; means the source from which you receive the Data and with whom you enter into the O-UDA.</li>
+
+<li><var class="replaceable-license-text"> 5.3.</var> &quot;Downstream Recipient&quot; means any person or persons who receives the Data directly or indirectly from you in accordance with the O-UDA.</li>
+
+<li><var class="replaceable-license-text"> 5.4.</var> &quot;Result&quot; means anything that you develop or improve from your use of Data that does not include more than a de minimis portion of the Data on which the use is based.  Results may include de minimis portions of the Data necessary to report on or explain use that has been conducted with the Data, such as figures in scientific papers, but do not include more.  Artificial intelligence models trained on Data (and which do not include more than a de minimis portion of Data) are Results.</li>
+
+<li><var class="replaceable-license-text"> 5.5.</var> &quot;Upstream Data Providers&quot; means the source or sources from which the Data Provider directly or indirectly received, under the terms of the O-UDA, material that is included in the Data.</li>
+            
+</ul>
+        </li>
+    
+</ul>
+
+  

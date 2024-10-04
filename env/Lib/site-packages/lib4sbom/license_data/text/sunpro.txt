@@ -1,0 +1,15 @@
+
+         <var class="replaceable-license-text"> 
+            Copyright (C) 1993 by Sun Microsystems, Inc. All rights reserved.
+         </var>
+         <p>
+            Developed at<var class="replaceable-license-text"> SunPro</var>
+            , a Sun Microsystems, Inc. business.
+         </p>
+
+         <p>
+            Permission to use, copy, modify, and distribute this software
+            is freely granted, provided that this notice is preserved.
+         </p>
+
+      

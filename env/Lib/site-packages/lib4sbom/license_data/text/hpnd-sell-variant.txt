@@ -1,0 +1,28 @@
+
+      <div class="replaceable-license-text"> 
+         <p>&lt;copyright notice&gt;</p>
+
+      </div>
+
+      <p>Permission to use, copy, modify, distribute<var class="optional-license-text">,</var> and sell this software and its documentation for any purpose
+         is hereby granted without fee, provided that the above copyright notice  <var class="replaceable-license-text"> appears</var> in all copies<var class="optional-license-text">, </var>
+         <var class="optional-license-text"> and</var> that both <var class="replaceable-license-text"> that</var> copyright notice
+         and this permission notice appear in supporting documentation<var class="optional-license-text">, and that the <var class="replaceable-license-text"> name</var> <var class="optional-license-text"> of</var>
+            <var class="replaceable-license-text"> &lt;copyright holder&gt;</var>
+            <var class="replaceable-license-text"> &lt;or related entities&gt;</var>
+         <var class="optional-license-text"> is</var> not be used in advertising or publicity pertaining to distribution of the software without specific, written
+         prior permission </var>. <var class="optional-license-text"> 
+            <var class="replaceable-license-text"> &lt;copyright holder&gt;</var> <var class="replaceable-license-text"> makes</var> no representations
+         about the suitability of this software for any purpose. It is provided &quot;as is&quot; without express or implied warranty.</var>
+      </p>
+
+      <div class="optional-license-text"> 
+        <p>
+            <var class="replaceable-license-text"> &lt;copyright holder&gt;</var> <var class="replaceable-license-text"> DISCLAIMS</var> ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING
+           ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS<var class="replaceable-license-text"> .</var> IN NO EVENT SHALL
+           <var class="replaceable-license-text"> &lt;copyright holder&gt;</var> BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES
+           OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,
+           NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</p>
+
+      </div>
+    

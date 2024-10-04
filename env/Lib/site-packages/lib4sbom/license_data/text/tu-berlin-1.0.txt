@@ -1,0 +1,32 @@
+
+      <div class="replaceable-license-text"> 
+        <p>Copyright 1992, 1993, 1994 by Jutta Degener and Carsten Bormann,
+	      </p>
+
+        <p>Technische Universitaet Berlin</p>
+
+      </div>
+
+      <p>
+        Any use of this software is permitted provided that this notice is not
+        removed and that neither the authors nor the Technische Universitaet Berlin
+        are deemed to have made any representations as to the suitability of this
+        software for any purpose nor are held responsible for any defects of
+        this software.  THERE IS ABSOLUTELY NO WARRANTY FOR THIS SOFTWARE.
+      </p>
+
+      <p>
+        As a matter of courtesy, the authors request to be informed about uses
+        this software has found, about bugs in this software, and about any
+        improvements that may be of general interest.
+      </p>
+
+      <div class="optional-license-text"> 
+        <p>Berlin, <var class="replaceable-license-text"> 28.11.1994</var></p>
+
+        <p>Jutta Degener</p>
+
+        <p>Carsten Bormann</p>
+
+      </div>
+    

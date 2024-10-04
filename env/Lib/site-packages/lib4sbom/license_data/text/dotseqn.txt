@@ -1,0 +1,12 @@
+
+      <div class="replaceable-license-text"> 
+         <p>Copyright (C) 1995 by Donald Arseneau</p>
+
+      </div>
+
+      <p>This file may be freely transmitted and reproduced, but it may not be changed unless the name is changed
+         also (except that you may freely change the paper-size option for \documentclass).</p>
+
+      <p>This notice must be left intact.</p>
+
+    

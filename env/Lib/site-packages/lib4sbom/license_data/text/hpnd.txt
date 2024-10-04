@@ -1,0 +1,35 @@
+
+      <div class="optional-license-text"> 
+         <p>Historical Permission Notice and Disclaimer</p>
+
+      </div>
+      <div class="replaceable-license-text"> 
+         <p>Copyright &lt;year&gt; &lt;copyright holder&gt;</p>
+
+      </div>
+
+      <p>Permission to use, copy, modify<var class="optional-license-text">,</var> and distribute this software <var class="optional-license-text"> and its documentation</var> for any purpose and
+         without fee is hereby granted<var class="optional-license-text">,</var> provided that the above copyright notice <var class="replaceable-license-text"> appear</var> in all copies<var class="optional-license-text">, </var>
+         <var class="optional-license-text"> and</var> that both <var class="replaceable-license-text"> that</var>
+          copyright notice
+         and this permission notice appear in supporting documentation<var class="optional-license-text"> , and that the <var class="replaceable-license-text"> name</var> <var class="optional-license-text"> of</var>
+            <var class="replaceable-license-text"> &lt;copyright holder&gt;</var>
+            <var class="replaceable-license-text"> &lt;or related entities&gt;</var>
+         not be used in advertising or publicity pertaining to distribution of the software without specific, written
+         prior permission</var>. 
+         <var class="optional-license-text"> <var class="replaceable-license-text"> &lt;copyright holder&gt;</var> 
+         makes no representations about the suitability of this software for any purpose. 
+         <var class="replaceable-license-text"> It</var> 
+         is provided &quot;as is&quot; without express or implied warranty.</var>
+      </p>
+
+      <div class="optional-license-text"> 
+        <p>
+            <var class="replaceable-license-text"> &lt;copyright holder&gt;</var> <var class="replaceable-license-text"> DISCLAIMS</var> ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING
+           ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS<var class="replaceable-license-text"> .</var> IN NO EVENT SHALL
+           <var class="replaceable-license-text"> &lt;copyright holder&gt;</var> BE LIABLE FOR ANY SPECIAL, INDIRECT OR <var class="replaceable-license-text"> CONSEQUENTIAL</var> DAMAGES
+           OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT,
+           NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</p>
+
+      </div>
+    

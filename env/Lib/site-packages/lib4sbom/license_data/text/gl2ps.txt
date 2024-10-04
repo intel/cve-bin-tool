@@ -1,0 +1,35 @@
+
+      <div class="optional-license-text"> 
+         <p>GL2PS LICENSE Version 2, November 2003</p>
+
+      </div>
+      <div class="replaceable-license-text"> 
+         <p>Copyright (C) 2003, Christophe Geuzaine</p>
+
+      </div>
+
+      <p>Permission to use, copy, and distribute this software and its documentation for any purpose with or
+         without fee is hereby granted, provided that the copyright notice appear in all copies and that both
+         that copyright notice and this permission notice appear in supporting documentation.</p>
+
+      <p>Permission to modify and distribute modified versions of this software is granted, provided that:</p>
+
+<ul style="list-style:none">
+        
+<li>
+            <var class="replaceable-license-text"> 1)</var>
+          the modifications are licensed under the same terms as this software;
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 2)</var>
+          you make available the source code of any modifications that you distribute, either on the same
+             media as you distribute any executable or other form of this software, or via a mechanism
+             generally accepted in the software development community for the electronic transfer of
+             data.
+        </li>
+      
+</ul>
+      <p>This software is provided &quot;as is&quot; without express or implied warranty.</p>
+
+    

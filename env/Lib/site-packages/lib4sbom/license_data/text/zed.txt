@@ -1,0 +1,12 @@
+
+      <div class="replaceable-license-text"> 
+         <p>(c) Jim Davies, January 1995</p>
+
+      </div>
+
+      <p>You may copy and distribute this file freely. Any queries and complaints should be forwarded to
+         Jim.Davies@comlab.ox.ac.uk.</p>
+
+      <p>If you make any changes to this file, please do not distribute the results under the name `zed-csp.sty&apos;.</p>
+
+    

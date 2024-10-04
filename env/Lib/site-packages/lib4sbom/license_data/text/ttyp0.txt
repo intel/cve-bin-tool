@@ -1,0 +1,54 @@
+
+         <div class="optional-license-text"> 
+            <p>THE TTYP0 LICENSE</p>
+
+         </div>
+         <p>
+            Permission is hereby granted, free of charge, to any person
+            obtaining a copy of this font software and associated files
+            (the &quot;Software&quot;), to deal in the Software without restriction,
+            including without limitation the rights to use, copy, modify,
+            merge, publish, distribute, embed, sublicense, and/or sell copies
+            of the Software, and to permit persons to whom the Software
+            is furnished to do so, subject to the following conditions:
+         </p>
+
+<ul style="list-style:none">
+            
+<li>
+               <var class="replaceable-license-text"> (1)</var>
+               <p>
+                  The above copyright notice, this permission notice,
+                  and the disclaimer below shall be included in all
+                  copies or substantial portions of the Software.
+               </p>
+
+            </li>
+            
+<li>
+               <var class="replaceable-license-text"> (2)</var>
+               <p>
+                  If the design of any glyphs in the fonts that are contained
+                  in the Software or generated during the installation process
+                  is modified or if additional glyphs are added to the fonts,
+                  the fonts must be renamed. The new names may not contain the
+                  word &quot;UW&quot;, irrespective of capitalisation; the new names may
+                  contain the word &quot;ttyp0&quot;, irrespective of capitalisation,
+                  only if preceded by a foundry name different from &quot;UW&quot;.
+               </p>
+
+               <p>
+                  THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY
+                  KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+                  WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+                  PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS
+                  OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+                  OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
+                  OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
+                  THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+               </p>
+
+            </li>
+         
+</ul>
+      

@@ -1,0 +1,44 @@
+
+	     <p>insert GPL v3 text here</p>
+
+	     <p>AUTOCONF CONFIGURE SCRIPT EXCEPTION</p>
+
+	     <p>Version 3.0, 18 August 2009</p>
+
+	     <p>Copyright © 2009 Free Software Foundation, Inc. &gt;http://fsf.org/&lt;</p>
+
+	     <p>Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.</p>
+
+	     <p>This Exception is an additional permission under section 7 of the GNU General Public License, version 3 (&quot;GPLv3&quot;). It applies to a given file that bears a notice placed by the copyright holder of the file stating that the file is governed by GPLv3 along with this Exception.</p>
+
+	     <p>The purpose of this Exception is to allow distribution of Autoconf&apos;s typical output under terms of the recipient&apos;s choice (including proprietary).</p>
+
+<ul style="list-style:none">
+        
+<li>
+			         <var class="replaceable-license-text"> 0.</var>
+			 Definitions.
+			<p>&quot;Covered Code&quot; is the source or object code of a version of Autoconf that is a covered work under this License.</p>
+
+			         <p>&quot;Normally Copied Code&quot; for a version of Autoconf means all parts of its Covered Code which that version can copy from its code (i.e., not from its input file) into its minimally verbose, non-debugging and non-tracing output.</p>
+
+			         <p>&quot;Ineligible Code&quot; is Covered Code that is not Normally Copied Code.</p>
+
+		       </li>
+		       
+<li>
+			         <var class="replaceable-license-text"> 1.</var>
+			 Grant of Additional Permission.
+			<p>You have permission to propagate output of Autoconf, even if such propagation would otherwise violate the terms of GPLv3. However, if by modifying Autoconf you cause any Ineligible Code of the version you received to become Normally Copied Code of your modified version, then you void this Exception for the resulting covered work. If you convey that resulting covered work, you must remove this Exception in accordance with the second paragraph of Section 7 of GPLv3.</p>
+
+		       </li>
+		       
+<li>
+			         <var class="replaceable-license-text"> 2.</var>
+			No Weakening of Autoconf Copyleft.
+			<p>The availability of this Exception does not imply any general presumption that third-party software is unaffected by the copyleft requirements of the license of Autoconf.</p>
+
+		       </li>
+	     
+</ul>
+    

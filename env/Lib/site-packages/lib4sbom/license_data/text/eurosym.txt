@@ -1,0 +1,57 @@
+
+      <div class="replaceable-license-text"> 
+         <p>Copyright (c) 1999-2002 Henrik Theiling</p>
+
+      </div>
+      <var class="optional-license-text"> 
+         <br />
+
+Licence Version 2
+      <br />
+
+      </var>
+
+      <p>This software is provided &apos;as-is&apos;, without warranty of any kind, express or implied. In no
+         event will the authors or copyright holders be held liable for any damages arising from the use of
+         this software.</p>
+
+      <p>Permission is granted to anyone to use this software for any purpose, including commercial applications,
+         and to alter it and redistribute it freely, subject to the following restrictions:</p>
+
+<ul style="list-style:none">
+        
+<li>
+            <var class="replaceable-license-text"> 1.</var>
+          The origin of this software must not be misrepresented; you must not claim that you wrote the
+             original software. If you use this software in a product, an acknowledgment in the product
+             documentation would be appreciated.
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 2.</var>
+          Altered source versions must be plainly marked as such, and must not be misrepresented as
+             being the original software.
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 3.</var>
+          You must not use any of the names of the authors or copyright holders of the original
+             software for advertising or publicity pertaining to distribution without specific, written
+             prior permission.
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 4.</var>
+          If you change this software and redistribute parts or all of it in any form, you must make
+             the source code of the altered version of this software available.
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 5.</var>
+          This notice may not be removed or altered from any source distribution.
+        </li>
+      
+</ul>
+      <p>This licence is governed by the Laws of Germany. Disputes shall be settled by Saarbruecken City Court.</p>
+
+    

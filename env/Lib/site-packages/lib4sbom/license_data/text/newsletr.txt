@@ -1,0 +1,25 @@
+
+      <div class="replaceable-license-text"> 
+         <p>Copyright 1989--2004 by Hunter Goatley.</p>
+
+      </div>
+
+      <p>Permission is granted to anyone to use this software for any purpose on any computer system, and to
+         redistribute it freely, subject to the following restrictions:</p>
+
+<ul style="list-style:none">
+        
+<li>
+            <var class="replaceable-license-text"> 1.</var>
+          This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+             without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 2.</var>
+          Altered versions must be plainly marked as such, and must not be misrepresented as being the
+             original software.
+        </li>
+      
+</ul>
+    

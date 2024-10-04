@@ -1,0 +1,19 @@
+
+         <div class="replaceable-license-text"> 
+            <p>
+               Copyright &lt;year&gt; &lt;copyright holder&gt;
+            </p>
+
+         </div>
+          <p>
+            Permission to use, copy, modify, and distribute this documentation
+            for any purpose and without fee is hereby granted, provided that
+            the above copyright notice and this permission notice appear in all
+            copies.
+            <var class="replaceable-license-text"> &lt;copyright holder&gt;</var>
+            makes no representations about the suitability for
+            any purpose of the information in this document. This documentation
+            is provided &quot;as is&quot; without express or implied warranty.
+         </p>
+
+      

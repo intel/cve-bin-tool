@@ -1,0 +1,69 @@
+
+      <div class="optional-license-text"> 
+         <p>LICENSE FOR THE Extreme! Lab PullParser</p>
+
+      </div>
+      <div class="replaceable-license-text"> 
+         <p>Copyright (c) 2002 The Trustees of Indiana University. All rights reserved.</p>
+
+      </div>
+
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided
+         that the following conditions are met:</p>
+
+<ul style="list-style:none">
+        
+<li>
+            <var class="replaceable-license-text"> 1)</var>
+          All redistributions of source code must retain the above copyright notice, the list of authors in
+             the original source code, this list of conditions and the disclaimer listed in this
+             license;
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 2)</var>
+          All redistributions in binary form must reproduce the above copyright notice, this list of
+             conditions and the disclaimer listed in this license in the documentation and/or other
+             materials provided with the distribution;
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 3)</var>
+          Any documentation included with all redistributions must include the following acknowledgement:
+          <p>&quot;This product includes software developed by the Indiana University Extreme! Lab. For further
+             information please visit http://www.extreme.indiana.edu/&quot;</p>
+
+            <p>Alternatively, this acknowledgment may appear in the software itself, and wherever such
+             third-party acknowledgments normally appear.</p>
+
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 4)</var>
+           The name &quot;Indiana <var class="replaceable-license-text"> Univeristy</var>&quot; <var class="replaceable-license-text"> and</var> &quot;Indiana <var class="replaceable-license-text"> Univeristy</var> Extreme! Lab&quot; 
+           shall not be used to endorse or promote products derived from this software without prior written permission from Indiana
+             University. For written permission, please contact http://www.extreme.indiana.edu/.
+        </li>
+        
+<li>
+            <var class="replaceable-license-text"> 5)</var>
+          Products derived from this software may not use &quot;Indiana <var class="replaceable-license-text"> Univeristy</var>&quot; 
+          name nor may &quot;Indiana
+          <var class="replaceable-license-text"> Univeristy</var>&quot; appear in their name, 
+          without prior written permission of the Indiana University.
+             Indiana University provides no reassurances that the source code provided does not infringe
+             the patent or any other intellectual property rights of any other entity. Indiana University
+             disclaims any liability to any recipient for claims brought by any other entity based on
+             infringement of intellectual property rights or otherwise.
+        </li>
+      
+</ul>
+      <p>LICENSEE UNDERSTANDS THAT SOFTWARE IS PROVIDED &quot;AS IS&quot; FOR WHICH NO WARRANTIES AS TO CAPABILITIES OR
+         ACCURACY ARE MADE. INDIANA UNIVERSITY GIVES NO WARRANTIES AND MAKES NO REPRESENTATION THAT SOFTWARE IS
+         FREE OF INFRINGEMENT OF THIRD PARTY PATENT, COPYRIGHT, OR OTHER PROPRIETARY RIGHTS. INDIANA UNIVERSITY
+         MAKES NO WARRANTIES THAT SOFTWARE IS FREE FROM &quot;BUGS&quot;, &quot;VIRUSES&quot;, &quot;TROJAN HORSES&quot;, &quot;TRAP DOORS&quot;,
+         &quot;WORMS&quot;, OR OTHER HARMFUL CODE. LICENSEE ASSUMES THE ENTIRE RISK AS TO THE PERFORMANCE OF SOFTWARE
+         AND/OR ASSOCIATED MATERIALS, AND TO THE PERFORMANCE AND VALIDITY OF INFORMATION GENERATED USING
+         SOFTWARE.</p>
+
+    

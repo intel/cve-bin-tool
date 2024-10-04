@@ -1,0 +1,64 @@
+
+         <div class="replaceable-license-text"> 
+         <p>
+            Copyright 2002 Purdue Research Foundation, West
+            Lafayette, Indiana 47907. All rights reserved.
+         </p>
+
+         <p>
+            Written by Victor A. Abell
+         </p>
+
+         </div>
+         <p>
+            This software is not subject to any license of
+            the American Telephone and Telegraph Company
+            or the Regents of the University of California.
+         </p>
+
+         <p>
+            Permission is granted to anyone to use this software for
+            any purpose on any computer system, and to alter it and
+            redistribute it freely, subject to the following restrictions:
+         </p>
+
+<ul style="list-style:none">
+            
+<li>
+               <var class="replaceable-license-text"> 1.</var>
+               <p>
+                  Neither the authors nor Purdue University are responsible
+                  for any consequences of the use of this software.
+               </p>
+
+            </li>
+            
+<li>
+               <var class="replaceable-license-text"> 2.</var>
+               <p>
+                  The origin of this software must not be misrepresented, either
+                  by explicit claim or by omission. Credit to the authors and
+                  Purdue University must appear in documentation and sources.
+               </p>
+
+            </li>
+            
+<li>
+               <var class="replaceable-license-text"> 3.</var>
+               <p>
+                  Altered versions must be plainly marked as such, and must
+                  not be misrepresented as being the original software.
+               </p>
+
+            </li>
+            
+<li>
+               <var class="replaceable-license-text"> 4.</var>
+               <p>
+                  This notice may not be removed or altered.
+               </p>
+
+            </li>
+         
+</ul>
+      

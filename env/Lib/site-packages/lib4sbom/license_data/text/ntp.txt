@@ -1,0 +1,22 @@
+
+      <div class="optional-license-text"> 
+         <p>NTP License (NTP)</p>
+
+      </div>
+      <div class="replaceable-license-text"> 
+         <p>Copyright (c) (CopyrightHoldersName) (From 4-digit-year)-(To 4-digit-year)
+         </p>
+
+      </div>
+
+      <p>Permission to use, copy, modify, and distribute this software and its documentation for any purpose with
+         or without fee is hereby granted, provided that the above copyright notice appears in all copies and
+         that both the copyright notice and this permission notice appear in supporting documentation, and that
+         the name
+        <var class="replaceable-license-text"> (TrademarkedName)</var> not be used in advertising or publicity pertaining
+        to distribution of the software without specific, written prior permission.
+	<var class="replaceable-license-text"> (TrademarkedName)</var> makes no representations about the suitability <var class="optional-license-text"> of</var>
+        this software for any purpose. It is provided &quot;as is&quot; without express or implied warranty.
+      </p>
+
+    
