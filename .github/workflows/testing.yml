@@ -135,13 +135,13 @@ jobs:
           echo "Today's Cache Key: Linux-cve-bin-tool-${{ steps.get-date.outputs.date }}"
           echo "Yesterday's Cache Key: Linux-cve-bin-tool-${{ steps.get-date.outputs.yesterday }}"
       - name: Get today's cached database
-        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4.0.2
+        uses: actions/cache@2cdf405574d6ef1f33a1d12acccd3ae82f47b3f2 # v4.1.0
         id: todays-cache
         with:
           path: cache
           key: Linux-cve-bin-tool-${{ steps.get-date.outputs.date }}
       - name: Get yesterday's cached database if today's is not available
-        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4.0.2
+        uses: actions/cache@2cdf405574d6ef1f33a1d12acccd3ae82f47b3f2 # v4.1.0
         if: steps.todays-cache.outputs.cache-hit != 'true'
         with:
           path: cache
@@ -267,13 +267,13 @@ jobs:
           echo "Today's Cache Key: Linux-cve-bin-tool-${{ steps.get-date.outputs.date }}"
           echo "Yesterday's Cache Key: Linux-cve-bin-tool-${{ steps.get-date.outputs.yesterday }}"
       - name: Get today's cached database
-        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4.0.2
+        uses: actions/cache@2cdf405574d6ef1f33a1d12acccd3ae82f47b3f2 # v4.1.0
         id: todays-cache
         with:
           path: cache
           key: Linux-cve-bin-tool-${{ steps.get-date.outputs.date }}
       - name: Get yesterday's cached database if today's is not available
-        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4.0.2
+        uses: actions/cache@2cdf405574d6ef1f33a1d12acccd3ae82f47b3f2 # v4.1.0
         if: steps.todays-cache.outputs.cache-hit != 'true'
         with:
           path: cache
@@ -411,13 +411,13 @@ jobs:
           echo "Today's Cache Key: Linux-cve-bin-tool-${{ steps.get-date.outputs.date }}"
           echo "Yesterday's Cache Key: Linux-cve-bin-tool-${{ steps.get-date.outputs.yesterday }}"
       - name: Get today's cached database
-        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4.0.2
+        uses: actions/cache@2cdf405574d6ef1f33a1d12acccd3ae82f47b3f2 # v4.1.0
         id: todays-cache
         with:
           path: cache
           key: Linux-cve-bin-tool-${{ steps.get-date.outputs.date }}
       - name: Get yesterday's cached database if today's is not available
-        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4.0.2
+        uses: actions/cache@2cdf405574d6ef1f33a1d12acccd3ae82f47b3f2 # v4.1.0
         if: steps.todays-cache.outputs.cache-hit != 'true'
         with:
           path: cache
@@ -517,14 +517,14 @@ jobs:
           echo "Today's Cache Key: Linux-cve-bin-tool-${{ steps.get-date.outputs.DATE }}"
           echo "Yesterday's Cache Key: Linux-cve-bin-tool-${{ steps.get-date.outputs.YESTERDAY }}"
       - name: Get today's cached database
-        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4.0.2
+        uses: actions/cache@2cdf405574d6ef1f33a1d12acccd3ae82f47b3f2 # v4.1.0
         id: todays-cache
         with:
           path: cache
           key: Linux-cve-bin-tool-${{ steps.get-date.outputs.DATE }}
           enableCrossOsArchive: true
       - name: Get yesterday's cached database if today's is not available
-        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4.0.2
+        uses: actions/cache@2cdf405574d6ef1f33a1d12acccd3ae82f47b3f2 # v4.1.0
         if: steps.todays-cache.outputs.cache-hit != 'true'
         with:
           path: cache
@@ -558,7 +558,7 @@ jobs:
           test/test_cli.py
           test/test_cvedb.py
       - name: Cache conda
-        uses: actions/cache@0c45773b623bea8c8e75f6c82b208c3cf94ea4f9 # v4.0.2
+        uses: actions/cache@2cdf405574d6ef1f33a1d12acccd3ae82f47b3f2 # v4.1.0
         env:
           # Increase to reset cache if requirements.txt file has not changed
           CACHE_NUMBER: 0
